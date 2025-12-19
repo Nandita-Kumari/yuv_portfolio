@@ -2,6 +2,9 @@ import React from "react";
 import card1 from "../assets/cards/Card1.png";
 import Experience from "../assets/cards/Experience.jpg";
 import CaseStudy2 from "../assets/cards/CaseStudy2.jpg";
+import blog from "../assets/BLOG.png";
+import brandStrategy from "../assets/BrandStrategy.png";
+import socialMediaMarketing from "../assets/DigitalMarketing.png";
 
 export default function Hero_Second() {
 
@@ -11,12 +14,12 @@ export default function Hero_Second() {
   // { id: 3, title: "Certifications", image: card1, link: "/certifications" },
   // { id: 4, title: "Recommendations", image: card1, link: "/recommendations" },
   { id: 5, title: "Projects", image: card1, link: "/projects" },
-  { id: 6, title: "Brand Strategy", image: card1, link: "/projects" },
-  { id: 7, title: "Social Media Marketing", image: card1, link: "/projects" },
+  { id: 6, title: "Brand Strategy", image: brandStrategy, link: "/projects" },
+  { id: 7, title: "Social Media Marketing", image: socialMediaMarketing, link: "/projects" },
 ];
 
 const cards2 = [
-  { id: 1, title: "Blogs", image: card1, link: "/blogs" },
+  { id: 1, title: "Blogs", image: blog, link: "/blogs" },
   { id: 2, title: "Case Study", image: CaseStudy2, link: "/case-study" },
   { id: 3, title: "News Letters", image: card1, link: "/newsletters" },
   { id: 3, title: "Achievements", image: card1, link: "/achievements" },

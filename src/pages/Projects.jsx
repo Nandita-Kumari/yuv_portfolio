@@ -3,8 +3,15 @@ import Navbar from "../components/Navbar";
 import { Box, Toolbar, Typography } from "@mui/material";
 import Hero from "../components/Hero";
 import { useNavigate } from "react-router-dom";
+import musicImg from "../assets/achievements/AeroIndia_page-0001.jpg";
 
 /* ===================== DATA ===================== */
+const pitchDecks = [
+  { id: 1, title: "Instawings", pdf: "Pitch-Deck-Instawings.pdf",  image: musicImg, },
+  { id: 2, title: "Paypilot", pdf: "/Pitch-Deck-Paypilot.pdf", },
+  { id: 3, title: "Arka Network", pdf: "/Pitch-Deck-ArkaNetwork.pdf", },
+  
+];
 
 const caseStudies = [
   { id: 1, title: "Ikea", url: "/case-study" },
@@ -56,7 +63,7 @@ const projects = [
 ];
 
 const achievements = [
-  { id: 1, title: "Aero India 2024", url: "/achievements/best-marketer" },
+  { id: 1, title: "Aero India 2024", url: "/achievements/best-marketer", image: musicImg, },
   { id: 2, title: "JD Design Awards - Best Future Forge", url: "/achievements/user-growth" },
   
 ];
@@ -74,80 +81,118 @@ const productsAndPackaging = [
 const Section = ({ title, items }) => {
   const navigate = useNavigate();
 
-  return (
-    <Box sx={{ mt: 8 }}>
-      {/* Section Title */}
-      <Box sx={{ mb: 4 }}>
-        <Typography
-          variant="h5"
-          sx={{
-            fontWeight: 700,
-            letterSpacing: "2px",
-            display: "inline-block",
-            position: "relative",
-            pb: 1,
-            "&::after": {
-              content: '""',
-              position: "absolute",
-              left: 0,
-              bottom: 0,
-              width: "100%", // AUTO underline width
-              height: "3px",
-              backgroundColor: "#db0000",
-              borderRadius: "2px",
-            },
-          }}
-        >
-          {title}
-        </Typography>
-      </Box>
+  const handleClick = (item) => {
+    if (item.pdf) {
+      navigate(`/viewer?file=${item.pdf}`);
+    } else if (item.url) {
+      navigate(item.url);
+    }
+  };
 
-      {/* Slider */}
+  return (
+   <Box sx={{ mt: 8 }}>
+      <Box sx={{ mb: 4 }}> 
+        <Typography variant="h5" 
+          sx={{ 
+            fontWeight: 700, 
+            letterSpacing: "2px", 
+            display: "inline-block",
+            position: "relative", 
+            pb: 1, 
+            "&::after": { 
+              content: '""', 
+              position: "absolute", 
+              left: 0, 
+              bottom: 0, 
+              width: "100%", 
+              height: "3px", 
+              backgroundColor: "#db0000", 
+              borderRadius: "2px", 
+              }, 
+              }} 
+              > {title} 
+              </Typography> 
+              </Box>
+
       <Box
         sx={{
           display: "flex",
           gap: 3,
           overflowX: "auto",
           scrollSnapType: "x mandatory",
-          pb: 2,
           "&::-webkit-scrollbar": { display: "none" },
         }}
       >
         {items.map((item) => (
           <Box
             key={item.id}
-            onClick={() => navigate(item.url)}
+            onClick={() => handleClick(item)}
             sx={{
-              minWidth: { xs: "240px", sm: "260px", md: "260px" },
+              minWidth: "260px",
               height: "160px",
-              scrollSnapAlign: "start",
-              backgroundColor: "#111",
               borderRadius: "14px",
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
+              position: "relative",
+              cursor: "pointer",
+              overflow: "hidden",
+              scrollSnapAlign: "start",
+
+              backgroundImage: item.image ? `url(${item.image})` : "none",
+              backgroundSize: "cover",
+              backgroundPosition: "center",
+              backgroundColor: item.image ? "transparent" : "#191818",
+
               border: "1px solid #222",
               transition: "0.35s ease",
-              cursor: "pointer",
               "&:hover": {
                 transform: "translateY(-8px)",
                 boxShadow: "0 6px 25px rgba(228,25,25,0.7)",
-                backgroundColor: "#151515",
               },
             }}
           >
-            <Typography
+            {/* PDF badge */}
+            {item.pdf && (
+              <Box
+                sx={{
+                  position: "absolute",
+                  top: 10,
+                  right: 10,
+                  backgroundColor: "#db0000",
+                  fontSize: "0.6rem",
+                  fontWeight: 700,
+                  px: 1,
+                  py: "2px",
+                  borderRadius: "6px",
+                  zIndex: 2,
+                }}
+              >
+                PDF
+              </Box>
+            )}
+
+            {/* Overlay */}
+            <Box
               sx={{
-                fontWeight: 600,
-                letterSpacing: "1px",
-                textAlign: "center",
-                fontSize: "0.7rem",
-                paddingLeft: "5px",
-                paddingRight: "5px"
+                position: "absolute",
+                inset: 0,
+                background:
+                  "linear-gradient(to top, rgba(0,0,0,0.8), rgba(0,0,0,0.3))",
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+                padding: 2,
               }}
             >
-              {item.title}
-            </Typography>
+              <Typography
+                sx={{
+                  fontWeight: 800,
+                  fontSize: "0.75rem",
+                  textAlign: "center",
+                  letterSpacing: "1px",
+                }}
+              >
+                {item.title}
+              </Typography>
+            </Box>
           </Box>
         ))}
       </Box>
@@ -171,7 +216,8 @@ export default function Projects() {
       <Toolbar />
       <Hero />
 
-      <Box sx={{ px: { xs: 2, md: 6 }, mt: 6 }}>        
+      <Box sx={{ px: { xs: 2, md: 6 }, mt: 6 }}>   
+        <Section title="Pitch Decks" items={pitchDecks}/>     
         <Section title="Projects" items={projects} />
         <Section title="Case Study's" items={caseStudies} />
         <Section title="Achievements" items={achievements} />

@@ -5,6 +5,7 @@ import Professional from "./pages/Professional";
 import Projects from "./pages/Projects";
 import CaseStudy from "./pages/CaseStudy";
 import Contact from "./pages/Contact";
+import PdfViewer from "./pages/PdfViewer";
 
 
 export default function AppRouter() {
@@ -17,6 +18,7 @@ export default function AppRouter() {
         <Route path="/projects" element={<Projects />} />
         <Route path="/case-study" element={<CaseStudy/>} />
         <Route path="/hire-me" element={<Contact />} />
+        <Route path="/viewer" element={<PdfViewer />} />
       </Routes>
     </BrowserRouter>
   );
