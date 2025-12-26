@@ -20,7 +20,7 @@ import { NavLink, useLocation } from 'react-router-dom';
 
 const drawerWidth = 240;
 const navItems = [
-  { label: "Home", path: "/" },
+  { label: "Home", path: "/home" },
   { label: "Professional", path: "/professional" },
   { label: "Skills", path: "/skills" },
   { label: "Projects & More", path: "/projects" },

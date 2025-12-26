@@ -6,13 +6,17 @@ import Projects from "./pages/Projects";
 import CaseStudy from "./pages/CaseStudy";
 import Contact from "./pages/Contact";
 import PdfViewer from "./pages/PdfViewer";
+import IntroVideo from "./pages/IntroVideo";
+// import IntroSplash from "./pages/IntroVideo";
 
 
 export default function AppRouter() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<IntroVideo />} />
+        {/* <Route path="/" element={<IntroSplash/>}/> */}
+        <Route path="/home" element={<Home />} />
         <Route path="/professional" element={<Professional />} />
         <Route path="/skills" element={<Skills />} />
         <Route path="/projects" element={<Projects />} />
