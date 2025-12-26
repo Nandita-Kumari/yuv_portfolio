@@ -13,7 +13,7 @@ export default function IntroVideo() {
     if (video) {
       video.play();
       video.onended = () => {
-        navigate("/home"); // redirect after video ends
+        navigate("/who"); // redirect after video ends
       };
     }
   }, [navigate]);
