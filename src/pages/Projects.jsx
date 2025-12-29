@@ -4,49 +4,61 @@ import { Box, Toolbar, Typography } from "@mui/material";
 import Hero from "../components/Hero";
 import { useNavigate } from "react-router-dom";
 import musicImg from "../assets/achievements/AeroIndia_page-0001.jpg";
-
+import tescoImg from "../assets/caseStudy/tesco.png";
+import ikeaImg from "../assets/caseStudy/ikea.jpg";
+import googleImg from "../assets/caseStudy/google.jpg";
+import lorealImg from "../assets/caseStudy/loreal.jpg";
+import nikeImg from "../assets/caseStudy/nike.jpg";
+import jdDesignAwardImage from "../assets/achievements/jdDesignAward.jpg";
+import smartWaterImg from "../assets/projects/smartWater.jpg";
+import mapImg from "../assets/projects/map.jpg";
+import barbieBratzImg from "../assets/projects/barbieBratz.jpg";
+import lVImg from "../assets/projects/lV.jpg";
+import bvlGariImg from "../assets/projects/bvlgari.jpg";
+import theTapioCafeImg from "../assets/logos/theTapioCafe.jpg";
+import cashValueImg from "../assets/logos/cashValue.jpg";
+import thePaniEqnImg from "../assets/logos/thePaniEqn.jpg";
+import brandColorpaypilotLogo from "../assets/logos/paypilotLogo.png";
+import systechImg from "../assets/pitchDecks/systech.jpg";
+import instawingsImg from "../assets/pitchDecks/instawings.jpg";
+import arkaNetworksImg from "../assets/pitchDecks/arkaNetworks.jpg";
+import ttplImg from "../assets/logos/ttplImg.jpg"; 
+import allInOneHospitalityImg from "../assets/logos/allInOneHospitality.jpg";
+import officialDPaypilotLogoImg from "../assets/logos/officialDpaypilotLogo.jpg";
+import officialPaypilotLogoImg from "../assets/logos/officialpaypilotLogo.jpg";
+import paypilotLogoImg from "../assets/logos/paypilotLogo.png"
+import symbolPaypilotLogoImg from "../assets/logos/symbolPaypilotLogo.jpg";
 /* ===================== DATA ===================== */
 const pitchDecks = [
-  { id: 1, title: "Instawings", pdf: "Pitch-Deck-Instawings.pdf",  image: musicImg, },
-  { id: 2, title: "Paypilot", pdf: "/Pitch-Deck-Paypilot.pdf", },
-  { id: 3, title: "Arka Network", pdf: "/Pitch-Deck-ArkaNetwork.pdf", },
-  
+  { id: 1, pdf: "Pitch-Deck-Instawings.pdf",  image: instawingsImg, },
+  { id: 2, pdf: "/Pitch-Deck-Paypilot.pdf", image: paypilotLogoImg },
+  { id: 3, pdf: "/Pitch-Deck-ArkaNetwork.pdf", image: arkaNetworksImg },
+  { id: 4, pdf: "/case-study", image: systechImg, },
 ];
 
 const caseStudies = [
-  { id: 1, title: "Ikea", url: "/case-study" },
-  { id: 2, title: "Tesco", url: "/case-study" },
-  { id: 3, title: "Multidisciplinary analysis of interfaces; supply chain Event  management (SCEM)– RFID control theory", url: "/case-study" },
-  { id: 4, title: "Google organisational culture", url: "/case-study" },
-  { id: 5, title: "Artificial intelligence vs Human intelligence", url: "/case-study" },
-  { id: 6, title: "Reviewing of Nike supply chain and Stake holder engagement", url: "/case-study" },
-  { id: 7, title: "Legal policies and best practices", url: "/case-study" },
-  { id: 8, title: "Visual merchandise", url: "/case-study" },
-  { id: 9, title: "Materials used in VM", url: "/case-study" },
-  { id: 10, title: "Evolution of luxury brands", url: "/case-study" },
+  { id: 1, url: "/case-study", image: ikeaImg, },
+  { id: 2, url: "/case-study", image: tescoImg },
+  // { id: 3, url: "/case-study", image: zaraImg },
+  // { id: 4, url: "/case-study", image: tommyHilfigerImg },
+  { id: 5, title: "Multidisciplinary analysis of interfaces; supply chain Event  management (SCEM)– RFID control theory", url: "/case-study" },
+  { id: 6, url: "/case-study", image: googleImg },
+  { id: 7, title: "Artificial intelligence vs Human intelligence", url: "/case-study" },
+  { id: 8, url: "/case-study", image: nikeImg },
+  // { id: 9, url: "/case-study", image: raymondImg },
+  { id: 10, title: "Legal policies and best practices", url: "/case-study" }, 
   { id: 11, title: "Display dissapointment", url: "/case-study" },
   { id: 12, title: "Men buy women shop", url: "/case-study" },
-  { id: 13, title: "Loreal", url: "/case-study" },
-  { id: 14, title: "PITCH DECKS", url: "/case-study" },
-  { id: 15, title: "Aarka networks", url: "/case-study" },
-  { id: 16, title: "Instawings pvt limited", url: "/case-study" },
-  { id: 17, title: "Systech", url: "/case-study" },
-  { id: 18, title: "Paypilot", url: "/case-study" },
-  { id: 19, title: "Choice Mobile", url: "/case-study" },
-  { id: 20, title: "TTPL", url: "/case-study" },
-  { id: 21, title: "Mobilink", url: "/case-study" },
-  { id: 22, title: "LOGOS", url: "/case-study" },
-  { id: 23, title: "Trisha tracon pvt limited", url: "/case-study" },
-  { id: 24, title: "The tapio cafe", url: "/case-study" },
-  { id: 25, title: "The paani equation", url: "/case-study" },
-  { id: 26, title: "Allinone Hospitality", url: "/case-study" },
-  { id: 27, title: "Cash Value", url: "/case-study" },
-  { id: 28, title: "Choice mobile", url: "/case-study" },  
+  { id: 13, url: "/case-study", image: lorealImg },    
+  { id: 14, title: "Choice Accessories", url: "/case-study" },  
+  { id: 15, title: "Mobilink", url: "/case-study" },  
+ 
+  
 ];
 
 const projects = [
   { id: 1, title: "India’s Premier Music Festival", url: "/projects/fintech-dashboard" },
-  { id: 2, title: "Smart water", url: "/projects/marketing-website" },
+  { id: 2, url: "/projects/marketing-website", image: smartWaterImg },
   { id: 3, title: "Corporate Communication", url: "/projects/portfolio" },
   { id: 4, title: "Haven And Helms", url: "/projects/admin-panel" },
   { id: 5, title: "Paytm business Model", url: "/projects/fintech-dashboard" },
@@ -54,26 +66,63 @@ const projects = [
   { id: 7, title: "50 years of fashion transformation", url: "/projects/portfolio" },
   { id: 8, title: "Retail Formats", url: "/projects/admin-panel" },
   { id: 9, title: "Her Grace wedding planners", url: "/projects/fintech-dashboard" },
-  { id: 10, title: "MAP( museum of art and photography ) BANGALORE floor plan", url: "/projects/marketing-website" },
+  { id: 10, url: "/projects/marketing-website", image: mapImg },
   { id: 11, title: "Globalisation and corporate culture", url: "/projects/portfolio" },
-  { id: 12, title: "Barbie vs Brats", url: "/projects/admin-panel" },
-  { id: 13, title: "Louis Vuitton business plan", url: "/projects/portfolio" },
-  { id: 14, title: "BVLGARI Priving strategy", url: "/projects/admin-panel" },
+  { id: 12, url: "/projects/admin-panel", image: barbieBratzImg },
+  { id: 13, url: "/projects/portfolio", image: lVImg },
+  { id: 14, url: "/projects/admin-panel", image: bvlGariImg },
   
 ];
 
 const achievements = [
-  { id: 1, title: "Aero India 2024", url: "/achievements/best-marketer", image: musicImg, },
-  { id: 2, title: "JD Design Awards - Best Future Forge", url: "/achievements/user-growth" },
+  { id: 1, url: "/achievements/best-marketer", image: musicImg, },
+  { id: 2, url: "/achievements/user-growth", image: jdDesignAwardImage },
   
 ];
 
-const productsAndPackaging = [
+const products = [
   { id: 1, title: "Hive guard helment", url: "/achievements/best-marketer" },
   { id: 2, title: "Nebula Saddle bag", url: "/achievements/user-growth" },
   { id: 3, title: "Hive tech shoes", url: "/achievements/best-marketer" },
-  { id: 4, title: "Saijal stories", url: "/achievements/user-growth" },
-  { id: 5, title: "Upbring", url: "/achievements/user-growth" },
+  
+];
+
+const packaging = [
+  
+  { id: 1, title: "Instawings", url: "/achievements/best-marketer" },
+  { id: 2, title: "Saijal stories", url: "/achievements/user-growth" },
+  { id: 3, title: "Upbring", url: "/achievements/user-growth" },
+];
+
+const logos = [
+  
+  { id: 1, url: "/achievements/best-marketer",image: brandColorpaypilotLogo},
+  { id: 2, url: "/achievements/best-marketer",image: officialPaypilotLogoImg},
+  { id: 3, url: "/achievements/best-marketer",image: officialDPaypilotLogoImg},
+  { id: 4, url: "/achievements/best-marketer",image: symbolPaypilotLogoImg},
+  { id: 5, url: "/achievements/user-growth", image: allInOneHospitalityImg },
+  { id: 6, url: "/achievements/user-growth", image: theTapioCafeImg },
+  { id: 7, url: "/achievements/user-growth", image: thePaniEqnImg },
+  { id: 8, url: "/achievements/user-growth", image: cashValueImg },
+  { id: 9, url: "/case-study", image: ttplImg },
+];
+
+const proposals = [
+  
+  { id: 1, url: "/achievements/best-marketer",image: paypilotLogoImg},
+  { id: 2, title: "All in One Hospitality", url: "/achievements/user-growth" },
+  { id: 3, url: "/achievements/user-growth", image: theTapioCafeImg },
+  { id: 4, url: "/achievements/user-growth", image: thePaniEqnImg },
+  { id: 5, url: "/achievements/user-growth", image: cashValueImg },
+];
+
+const floorPlans = [
+  
+  { id: 1, url: "/achievements/best-marketer",image: paypilotLogoImg},
+  { id: 2, title: "All in One Hospitality", url: "/achievements/user-growth" },
+  { id: 3, url: "/achievements/user-growth", image: theTapioCafeImg },
+  { id: 4, url: "/achievements/user-growth", image: thePaniEqnImg },
+  { id: 5, url: "/achievements/user-growth", image: cashValueImg },
 ];
 
 /* ===================== SECTION COMPONENT ===================== */
@@ -137,8 +186,10 @@ const Section = ({ title, items }) => {
               scrollSnapAlign: "start",
 
               backgroundImage: item.image ? `url(${item.image})` : "none",
-              backgroundSize: "cover",
-              backgroundPosition: "center",
+              backgroundSize: "contain",
+backgroundRepeat: "no-repeat",
+backgroundPosition: "center",
+
               backgroundColor: item.image ? "transparent" : "#191818",
 
               border: "1px solid #222",
@@ -221,7 +272,11 @@ export default function Projects() {
         <Section title="Projects" items={projects} />
         <Section title="Case Study's" items={caseStudies} />
         <Section title="Achievements" items={achievements} />
-        <Section title="Products & Packaging" items={productsAndPackaging} />
+        <Section title="Products" items={products} />
+        <Section title="Packaging" items={packaging} />
+        <Section title="Logos" items={logos} />
+        <Section title="Proposals" items={proposals} />
+        <Section title="Floor Plans" items={floorPlans} />
       </Box>
     </Box>
   );

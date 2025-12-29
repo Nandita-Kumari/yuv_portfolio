@@ -1516,8 +1516,129 @@ reputed.</p>
   {
     id: "VM",
     title: "Materials used in VM",
-    content:
-      "Designed content systems, posting calendars, and brand voice guides that aligned marketing goals with audience behavior.",
+    content: (
+        <>
+            <h6>INTRODUCTION</h6>
+            <p>Visual merchandising involves using different
+materials and elements to create visually appealing
+displays and improve the overall shopping
+experience for customers. These documents help
+showcase the product, tell a story, and grab the
+buyer's attention. Here are some common materials
+used in visual sales:</p>
+<p><strong>Mannequins - Forms</strong></p>
+<p>Mannequins, body shapes
+and skirts are essential for
+displaying clothing and
+accessories, allowing
+customers to visualize
+how items will look once
+they are put on.</p>
+
+<p><strong>PROPS</strong></p>
+<p>Props can range from
+simple items like crates,
+baskets, and stands to
+more complex items
+like themed
+decorations, sculptures
+or installations that
+create an atmosphere or
+specific context.</p>
+
+<p><strong>Signage and Graphics</strong></p>
+<p>Clear and eye-catching
+signs, banners, posters
+and graphics help convey
+important
+information,promotions
+and brand messages to
+customers. 
+</p>
+
+
+<p><strong>Lighting</strong></p>
+<p>The right lighting can have a huge
+impact on the visual appeal of a
+display. Different types of lighting,
+such as spotlights, ambient lighting,
+and accent lighting, can create mood
+and focus on specific products.</p>
+
+<p><strong>Mirror</strong></p>
+<p>Mirrors are often strategically placed
+to help customers see themselves
+wearing or using a product. They can
+also be used to create the illusion of a
+larger space. 
+</p>
+
+<p><strong>Shelves</strong></p>
+
+<p>Racks, display tables and shelves
+are well designed to help organize
+products, making it easy for
+customers to access products. They
+also contribute to the overall
+aesthetic of the display.
+</p>
+
+
+<p><strong>Flooring</strong></p>
+<p>Flooring materials, textures, and
+patterns can complement the overall
+aesthetic and theme of a display
+area. Different flooring choices can
+influence how customers perceive
+the products and the brand.
+</p>
+
+
+<p><strong>Textures and Fabrics</strong></p>
+<p>Incorporating different textures and
+fabrics can add depth and tactile
+appeal to displays. These materials
+can be used as backdrops,
+tablecloths, or drapery.
+</p>
+
+
+<p><strong>Graphics and Branding</strong></p>
+<p>Graphics, including logos, product
+images, and brand messages,
+contribute to brand identity and
+recognition. They can be applied to
+various surfaces like walls, windows,
+and floors.
+</p>
+
+<p><strong>Interactive Elements</strong></p>
+<p>Interactive displays, touchscreens,
+and digital interfaces engage
+customers and provide additional
+information about products,
+promotions, or brand stories.
+</p>
+
+
+<p><strong>Natural Elements</strong></p>
+<p>Natural elements such as plants,
+flowers, and natural materials like
+wood and stone can add an organic
+and refreshing touch to displays.
+</p>
+
+
+<p><strong>Technology</strong></p>
+<p>Modern visual merchandising often
+integrates technology, such as
+digital screens, augmented reality,
+and virtual reality, to provide
+interactive and dynamic displays.
+</p>
+        </>
+    ),
+      
   },
   {
     id: "evolution",
@@ -1529,15 +1650,165 @@ reputed.</p>
   {
     id: "display",
     title: "Display dissapointment",
-    content:
-      "Designed content systems, posting calendars, and brand voice guides that aligned marketing goals with audience behavior. Achieved consistent growth across platforms, increased saves, shares, and conversions while maintaining brand authenticity. Achieved consistent growth across platforms, increased saves, shares, and conversions while maintaining brand authenticity.Put in 100+ hours of research per case study checking trends, testing ideas, and working with remote teams. Turned weak posts into 3x engagement wins and up to 300% growth in followers and sales.",
+    content: (
+                <>
+                    <h6>what is the greatest
+challenge a visual
+merchandiser faces
+when it comes  to
+window displays ?
+Elaborate .</h6>
+
+<p>The greatest challenge for a visual merchandiser when it comes to
+window displays is navigating the fine line between artistic creativity
+and practical considerations. Balancing the need for attention
+grabbing, on-brand visuals with the limitations of space, changing
+trends, and the preferences of the target audience is a complex
+task that requires a unique blend of artistic flair</p>
+
+<p><strong>Story Telling</strong></p>
+<p>Effective window displays tell a story that resonates
+with customers. Whether it's showcasing a collection,
+highlighting a theme, or communicating a specific
+message, the visual merchandiser must use design
+elements such as colors, props, and layout to convey a
+narrative that engages and resonates with viewers.</p>
+
+
+<p><strong>Limited space and layout</strong></p>
+<p>Limited Space and Layout : Storefront windows often have
+limited space, which means that the visual merchandiser
+must work within these constraints to create a display that is
+both visually appealing and effectively communicates the
+brand's story or the current promotion. Deciding what
+products to feature and how to arrange them to maximize
+impact can be a complex task. </p>
+
+
+<p><strong>Being creative and practicle both</strong></p>
+<p>Conveying  the brand's message, and entice them
+to enter the store. The visual merchandiser wants
+to create eye-catching and unique displays, they
+also need to consider practical aspects such as
+product visibility, ease of maintenance, and
+adherence to safety regulations.
+</p>
+
+
+<h6>what do customers expect
+froma display ? Discuss
+why they expect the same.</h6>
+
+<p>Customers have specific expectations when it
+comes to window displays, and meeting these
+expectations can greatly influence their
+perception of a brand and their likelihood to
+enter a store. Here are some key things that
+customers expect from a window display:</p>
+<ol>
+    <li>Visual appeal </li>
+    <li>Relevance</li>
+    <li>Creativity and Innovation.</li>
+    <li>Storytelling</li>
+    <li>Product showcase</li>
+    <li>Variety</li>
+    <li>Aspirational value</li>
+    <li>Quality</li>
+    <li>Engagement</li>
+    <li>Brand values</li>
+</ol>
+
+<p>Customers' expectations from window displays
+stem from their desire for engaging, relevant, and
+enjoyable shopping experiences. Meeting these
+expectations helps brands stand out in a
+competitive market, establish emotional
+connections with customers, and create positive
+associations that drive foot traffic and foster
+brand loyalty.</p>
+
+<p>Window displays makes it easyfor customers to make
+discisions on what to buy what to not.  
+</p>
+
+<h6>Name the stores among which the
+survey was conducted. What themes
+were on diaplay ,and which display was
+appriciated the most? Why?</h6>
+
+<p><strong>Pre diwali theme and Autumn winter
+displays were there in stores.</strong></p>
+
+<p>Lifestyle was apprecited the most because it had most
+organised Autumn winter displays as compared to  other
+two similar brands. Customers said that the displays were
+not up to the nark in terms of their expectations. 
+most of customers looked for new arrivals iand latest
+collection from them but they were dissapointed with
+pantaloons and shopperstop.</p>
+<p>They gave many reviews like mannequins were not
+grouped properly acc to the theme and storytelling , the
+background was overshadowing the merchandise , color
+coordination was bad so overall it was fail.
+</p>
+                </>
+    ),
+      
   },
   {
     id: "men",
     title:
       "Men buy women shop",
-    content:
-      "Achieved consistent growth across platforms, increased saves, shares, and conversions while maintaining brand authenticity.",
+    content: (
+        <>
+            <h6>Why do most stores display merchandise on hang rods rather than in stacks?</h6>
+            <p><strong>Visibility and Accessibility:</strong> Hanging merchandise on rods provides better visibility of individual items. Shoppers can easily see the colors, patterns, and styles without needing to dig through stacks of clothing.</p>
+
+            <p><strong>Organization:</strong> Hanging clothes on rods allows for a more organized and tidy display. Each item has its designated place, making it easier for both shoppers and store staff to find and restock items.</p>
+
+            <p><strong>Prevention of Damage:</strong> Stacking clothing items can lead to wrinkles, creases, and potential damage to delicate fabrics.</p>
+
+            <p><strong>Prevention of Theft:</strong> Hanging merchandise on rods can also serve as a deterrent to theft. It's more difficult for shoplifters to conceal items when they are hanging individually on hangers, compared to grabbing items from stacks.</p>
+
+            <p><strong>Fitting Rooms:</strong> Many women's clothing items need to be tried on before purchase to ensure proper fit. Hanging items are easier to take into fitting rooms and put back afterward, as opposed to items stacked in piles.</p>
+
+            <p><strong>Enhanced Presentation:</strong> Hanging merchandise provides an opportunity for stores to create visually appealing displays.</p>
+
+            <p><strong>Brand Image:</strong> Displaying merchandise on hang-rods can be a part of a store's branding strategy. It can convey a sense of sophistication, professionalism.</p>
+
+            <p><strong>Space Efficiency:</strong> Stacking clothes in piles requires more floor space and can make a store feel cluttered.</p>
+
+
+            <h6>Visit a popular mall in your city and see the various types of length of hang rods</h6>
+
+            <p>Straight hang rods</p>
+            <p>Waves hang rods</p>
+            <p>Round hang rods</p>
+
+            <h6>A women's shopping experience is different from mans shopping behaviour. Discuss.</h6>
+
+            <p><strong>Mens Behaviour</strong></p>
+            <ul>
+                <li>Want their shopping experience simple and straightforwward</li>
+                <li>Focused on the goal-purchase</li>
+                <li>Interested in the result - not captivated by the process.</li>
+                <li>Stop shopping after they find te first workable product.</li>
+                <li>Tend to purchase when the need is immediate</li>
+                <li>Tend to think logically when making purchase decisions.</li>
+                <li>Less interested in discounts, deals, or out-of-season sales.</li>
+            </ul>
+
+            <p><strong>Womens Behaviour</strong></p>
+            <p>Women shopping is based on future needs. Tend to follow trends and fashion and make the purchasing decision with them in mind. Enjoy the shopping process as a whole
+                and tend to spend more time shopping. More selective and more likely to buy a product that fits their requirements.
+                Buy gifts for others too.
+                Make impulse purchases.
+                More responsive to marketing emails, coupons and sales. More respective to other people's opinions. Need online chat feature,
+                discussion forums, high-quality visuals, customer reviews.
+            </p>
+        </>
+    ),
+      
   },
   {
     id: "Loreal",
@@ -1608,97 +1879,16 @@ our consumers.</strong></p>
       </>
       ),
   },
-  {
-    id: "pitch",
-    title:
-      "PITCH DECKS",
-    content:
-      "Achieved consistent growth across platforms, increased saves, shares, and conversions while maintaining brand authenticity.",
-  },
-  {
-    id: "aarka",
-    title: "Aarka networks",
-    content:
-      "Designed content systems, posting calendars, and brand voice guides that aligned marketing goals with audience behavior. Achieved consistent growth across platforms, increased saves, shares, and conversions while maintaining brand authenticity. Achieved consistent growth across platforms, increased saves, shares, and conversions while maintaining brand authenticity.Put in 100+ hours of research per case study checking trends, testing ideas, and working with remote teams. Turned weak posts into 3x engagement wins and up to 300% growth in followers and sales.",
-  },
-  {
-    id: "instawings",
-    title:
-      "Instawings pvt limited",
-    content:
-      "Achieved consistent growth across platforms, increased saves, shares, and conversions while maintaining brand authenticity.",
-  },
-  {
-    id: "systech",
-    title: "Systech",
-    content:
-      "Designed content systems, posting calendars, and brand voice guides that aligned marketing goals with audience behavior. Achieved consistent growth across platforms, increased saves, shares, and conversions while maintaining brand authenticity. Achieved consistent growth across platforms, increased saves, shares, and conversions while maintaining brand authenticity.Put in 100+ hours of research per case study checking trends, testing ideas, and working with remote teams. Turned weak posts into 3x engagement wins and up to 300% growth in followers and sales.",
-  },
-  {
-    id: "paypilot",
-    title:
-      "Paypilot",
-    content:
-      "Achieved consistent growth across platforms, increased saves, shares, and conversions while maintaining brand authenticity.",
-  },
-  {
-    id: "choice",
-    title: "Choice Mobile",
-    content:
-      "Designed content systems, posting calendars, and brand voice guides that aligned marketing goals with audience behavior.",
-  },
-  {
-    id: "ttpl",
-    title:
-      "TTPL",
-    content:
-      "Designed content systems, posting calendars, and brand voice guides that aligned marketing goals with audience behavior. Achieved consistent growth across platforms, increased saves, shares, and conversions while maintaining brand authenticity. Achieved consistent growth across platforms, increased saves, shares, and conversions while maintaining brand authenticity.Put in 100+ hours of research per case study checking trends, testing ideas, and working with remote teams. Turned weak posts into 3x engagement wins and up to 300% growth in followers and sales.",
-  },
+  
   {
     id: "mobilink",
     title: "Mobilink",
     content:
       "Designed content systems, posting calendars, and brand voice guides that aligned marketing goals with audience behavior.",
   },
-  {
-    id: "logos",
-    title:
-      "LOGOS",
-    content:
-      "Designed content systems, posting calendars, and brand voice guides that aligned marketing goals with audience behavior. Achieved consistent growth across platforms, increased saves, shares, and conversions while maintaining brand authenticity. Achieved consistent growth across platforms, increased saves, shares, and conversions while maintaining brand authenticity.Put in 100+ hours of research per case study checking trends, testing ideas, and working with remote teams. Turned weak posts into 3x engagement wins and up to 300% growth in followers and sales.",
-  },
-  {
-    id: "trisha",
-    title: "Trisha tracon pvt limited",
-    content:
-      "Designed content systems, posting calendars, and brand voice guides that aligned marketing goals with audience behavior.",
-  },
-  {
-    id: "tapio",
-    title:
-      "The tapio cafe",
-    content:
-      "Achieved consistent growth across platforms, increased saves, shares, and conversions while maintaining brand authenticity.",
-  },
-  {
-    id: "paani",
-    title: "The paani equation",
-    content:
-      "Designed content systems, posting calendars, and brand voice guides that aligned marketing goals with audience behavior. Achieved consistent growth across platforms, increased saves, shares, and conversions while maintaining brand authenticity. Achieved consistent growth across platforms, increased saves, shares, and conversions while maintaining brand authenticity.Put in 100+ hours of research per case study checking trends, testing ideas, and working with remote teams. Turned weak posts into 3x engagement wins and up to 300% growth in followers and sales.",
-  },
-  {
-    id: "allinone",
-    title:
-      "Allinone Hospitality",
-    content:
-      "Designed content systems, posting calendars, and brand voice guides that aligned marketing goals with audience behavior. Achieved consistent growth across platforms, increased saves, shares, and conversions while maintaining brand authenticity. Achieved consistent growth across platforms, increased saves, shares, and conversions while maintaining brand authenticity.Put in 100+ hours of research per case study checking trends, testing ideas, and working with remote teams. Turned weak posts into 3x engagement wins and up to 300% growth in followers and sales.",
-  },
-  {
-    id: "cash",
-    title: "CASH Value",
-    content:
-      "Designed content systems, posting calendars, and brand voice guides that aligned marketing goals with audience behavior. Achieved consistent growth across platforms, increased saves, shares, and conversions while maintaining brand authenticity. Achieved consistent growth across platforms, increased saves, shares, and conversions while maintaining brand authenticity.Put in 100+ hours of research per case study checking trends, testing ideas, and working with remote teams. Turned weak posts into 3x engagement wins and up to 300% growth in followers and sales.",
-  },
+  
+  
+  
 ];
 
 /* ================= COMPONENT ================= */

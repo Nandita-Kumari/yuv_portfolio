@@ -43,7 +43,7 @@ export default function Hero() {
         }}
       >
         {/* Name */}
-        <Typography
+        {/* <Typography
           sx={{
             fontWeight: 700,
             fontSize: { xs: "1.4rem", sm: "2rem", md: "2.3rem" },
@@ -51,7 +51,7 @@ export default function Hero() {
           }}
         >
           YOUVAKSHI THAKUR
-        </Typography>
+        </Typography> */}
 
         {/* Description */}
         <Typography
