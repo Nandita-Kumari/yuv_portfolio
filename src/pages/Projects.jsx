@@ -32,6 +32,7 @@ import mythicMuscleImg from "../assets/logos/mythicMuscle.jpg";
 import mapFloorPlanImg from "../assets/floorPlan/mapFloorPlan.jpg";
 import pininFarinaImg from "../assets/proposals/PininFarina.jpg";
 import inifdImg from "../assets/proposals/inifd.jpeg";
+import paypilotFloorPlanImg from "../assets/floorPlan/paypilotFloorPlan.jpg";
 /* ===================== DATA ===================== */
 const pitchDecks = [
   { id: 1, pdf: "Pitch-Deck-Instawings.pdf",  image: instawingsImg, },
@@ -124,7 +125,7 @@ const proposals = [
 const floorPlans = [
   
   { id: 1, previewImage: mapFloorPlanImg, image: mapImg},
-  // { id: 2, title: "All in One Hospitality", url: "/achievements/user-growth" },
+  { id: 2, previewImage: paypilotFloorPlanImg, image: officialDPaypilotLogoImg },
   // { id: 3, url: "/achievements/user-growth", image: theTapioCafeImg },
   // { id: 4, url: "/achievements/user-growth", image: thePaniEqnImg },
   // { id: 5, url: "/achievements/user-growth", image: cashValueImg },
