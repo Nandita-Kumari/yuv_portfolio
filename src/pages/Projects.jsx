@@ -14,7 +14,7 @@ import smartWaterImg from "../assets/projects/smartWater.jpg";
 import mapImg from "../assets/projects/map.jpg";
 import barbieBratzImg from "../assets/projects/barbieBratz.jpg";
 import lVImg from "../assets/projects/lV.jpg";
-import bvlGariImg from "../assets/projects/bvlgari.jpg";
+// import bvlGariImg from "../assets/projects/bvlgari.jpg";
 import theTapioCafeImg from "../assets/logos/theTapioCafe.jpg";
 import cashValueImg from "../assets/logos/cashValue.jpg";
 import thePaniEqnImg from "../assets/logos/thePaniEqn.jpg";
@@ -70,7 +70,7 @@ const projects = [
   { id: 11, title: "Globalisation and corporate culture", url: "/projects/portfolio" },
   { id: 12, url: "/projects/admin-panel", image: barbieBratzImg },
   { id: 13, url: "/projects/portfolio", image: lVImg },
-  { id: 14, url: "/projects/admin-panel", image: bvlGariImg },
+  // { id: 14, url: "/projects/admin-panel", image: bvlGariImg },
   
 ];
 
