@@ -42,9 +42,9 @@ const navItems = [
 
 const avatarOptions = [
   { label: "Entrepreneur", avatar: entrepreneurImg },
-  { label: "Student", avatar: studentImg },
-  { label: "Professional", avatar: professionalImg },
-  { label: "Freelancer", avatar: freelancerImg },
+  { label: "Buisness Owner", avatar: studentImg },
+  { label: "Marketer", avatar: professionalImg },
+  { label: "HR", avatar: freelancerImg },
 ];
 
 function DrawerAppBar(props) {
