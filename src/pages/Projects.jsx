@@ -28,6 +28,10 @@ import officialDPaypilotLogoImg from "../assets/logos/officialDPaypilotLogo.jpg"
 import officialPaypilotLogoImg from "../assets/logos/officialPaypilotLogo.jpg";
 import paypilotLogoImg from "../assets/logos/paypilotLogo.png"
 import symbolPaypilotLogoImg from "../assets/logos/symbolPaypilotLogo.jpg";
+import mythicMuscleImg from "../assets/logos/mythicMuscle.jpg";
+import mapFloorPlanImg from "../assets/floorPlan/mapFloorPlan.jpg";
+import pininFarinaImg from "../assets/proposals/PininFarina.jpg";
+import inifdImg from "../assets/proposals/inifd.jpeg";
 /* ===================== DATA ===================== */
 const pitchDecks = [
   { id: 1, pdf: "Pitch-Deck-Instawings.pdf",  image: instawingsImg, },
@@ -105,24 +109,25 @@ const logos = [
   { id: 7, url: "/achievements/user-growth", image: thePaniEqnImg },
   { id: 8, url: "/achievements/user-growth", image: cashValueImg },
   { id: 9, url: "/case-study", image: ttplImg },
+  { id: 10, url: "/case-study", image: mythicMuscleImg },
 ];
 
 const proposals = [
   
-  { id: 1, url: "/achievements/best-marketer",image: paypilotLogoImg},
-  { id: 2, title: "All in One Hospitality", url: "/achievements/user-growth" },
-  { id: 3, url: "/achievements/user-growth", image: theTapioCafeImg },
-  { id: 4, url: "/achievements/user-growth", image: thePaniEqnImg },
-  { id: 5, url: "/achievements/user-growth", image: cashValueImg },
+  { id: 1, pdf: "PininFarina.pdf",image: pininFarinaImg},
+  { id: 2, pdf: "Inifd.pdf", image: inifdImg },
+  // { id: 3, url: "/achievements/user-growth", image: theTapioCafeImg },
+  // { id: 4, url: "/achievements/user-growth", image: thePaniEqnImg },
+  // { id: 5, url: "/achievements/user-growth", image: cashValueImg },
 ];
 
 const floorPlans = [
   
-  { id: 1, url: "/achievements/best-marketer",image: paypilotLogoImg},
-  { id: 2, title: "All in One Hospitality", url: "/achievements/user-growth" },
-  { id: 3, url: "/achievements/user-growth", image: theTapioCafeImg },
-  { id: 4, url: "/achievements/user-growth", image: thePaniEqnImg },
-  { id: 5, url: "/achievements/user-growth", image: cashValueImg },
+  { id: 1, previewImage: mapFloorPlanImg, image: mapImg},
+  // { id: 2, title: "All in One Hospitality", url: "/achievements/user-growth" },
+  // { id: 3, url: "/achievements/user-growth", image: theTapioCafeImg },
+  // { id: 4, url: "/achievements/user-growth", image: thePaniEqnImg },
+  // { id: 5, url: "/achievements/user-growth", image: cashValueImg },
 ];
 
 /* ===================== SECTION COMPONENT ===================== */
@@ -131,12 +136,21 @@ const Section = ({ title, items }) => {
   const navigate = useNavigate();
 
   const handleClick = (item) => {
-    if (item.pdf) {
-      navigate(`/viewer?file=${item.pdf}`);
-    } else if (item.url) {
-      navigate(item.url);
-    }
-  };
+  if (item.pdf) {
+    navigate(`/viewer?file=${item.pdf}`);
+    return;
+  }
+
+  if (item.previewImage) {
+    window.open(item.previewImage, "_blank");
+    return;
+  }
+
+  if (item.url) {
+    navigate(item.url);
+  }
+};
+
 
   return (
    <Box sx={{ mt: 8 }}>
@@ -186,7 +200,7 @@ const Section = ({ title, items }) => {
               scrollSnapAlign: "start",
 
               backgroundImage: item.image ? `url(${item.image})` : "none",
-              backgroundSize: "contain",
+              backgroundSize: "cover",
 backgroundRepeat: "no-repeat",
 backgroundPosition: "center",
 
