@@ -14,7 +14,7 @@ import smartWaterImg from "../assets/projects/smartWater.jpg";
 import mapImg from "../assets/projects/map.jpg";
 import barbieBratzImg from "../assets/projects/barbieBratz.jpg";
 import lVImg from "../assets/projects/lV.jpg";
-// import bvlGariImg from "../assets/projects/bvlgari.jpg";
+import bvlGariImg from "../assets/projects/bvlGari.jpg";
 import theTapioCafeImg from "../assets/logos/theTapioCafe.jpg";
 import cashValueImg from "../assets/logos/cashValue.jpg";
 import thePaniEqnImg from "../assets/logos/thePaniEqn.jpg";
@@ -24,8 +24,8 @@ import instawingsImg from "../assets/pitchDecks/instawings.jpg";
 import arkaNetworksImg from "../assets/pitchDecks/arkaNetworks.jpg";
 import ttplImg from "../assets/logos/ttplImg.jpg"; 
 import allInOneHospitalityImg from "../assets/logos/allInOneHospitality.jpg";
-import officialDPaypilotLogoImg from "../assets/logos/officialDpaypilotLogo.jpg";
-import officialPaypilotLogoImg from "../assets/logos/officialpaypilotLogo.jpg";
+import officialDPaypilotLogoImg from "../assets/logos/officialDPaypilotLogo.jpg";
+import officialPaypilotLogoImg from "../assets/logos/officialPaypilotLogo.jpg";
 import paypilotLogoImg from "../assets/logos/paypilotLogo.png"
 import symbolPaypilotLogoImg from "../assets/logos/symbolPaypilotLogo.jpg";
 /* ===================== DATA ===================== */
@@ -70,7 +70,7 @@ const projects = [
   { id: 11, title: "Globalisation and corporate culture", url: "/projects/portfolio" },
   { id: 12, url: "/projects/admin-panel", image: barbieBratzImg },
   { id: 13, url: "/projects/portfolio", image: lVImg },
-  // { id: 14, url: "/projects/admin-panel", image: bvlGariImg },
+  { id: 14, url: "/projects/admin-panel", image: bvlGariImg },
   
 ];
 
