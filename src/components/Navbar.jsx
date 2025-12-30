@@ -247,22 +247,57 @@ const handleExit = () => {
         </Toolbar>
 
         {/* AVATAR DROPDOWN */}
-        <Menu anchorEl={anchorEl} open={menuOpen} onClose={handleCloseMenu}>
-          {avatarOptions.map((item) => (
-            <MenuItem
-              key={item.label}
-              onClick={() => handleAvatarChange(item)}
-              sx={{ gap: 1 }}
-            >
-              <Avatar src={item.avatar} sx={{ width: 24, height: 24 }} />
-              {item.label}
-            </MenuItem>
-          ))}
-          <Divider />
-          <MenuItem onClick={handleExit} sx={{ color: "red" }}>
-            Exit
-          </MenuItem>
-        </Menu>
+       <Menu
+  anchorEl={anchorEl}
+  open={menuOpen}
+  onClose={handleCloseMenu}
+  PaperProps={{
+    sx: {
+      bgcolor: "#121212",
+      color: "#fff",
+      borderRadius: 2,
+      minWidth: 200,
+      boxShadow: "0px 10px 30px rgba(118, 13, 13, 0.6)",
+
+      "& .MuiMenuItem-root": {
+        gap: 1,
+        fontSize: "0.85rem",
+        "&:hover": {
+          bgcolor: "#1f1f1f",
+        },
+      },
+
+      "& .MuiDivider-root": {
+        borderColor: "#c1bfbfff",
+      },
+    },
+  }}
+>
+  {avatarOptions.map((item) => (
+    <MenuItem
+      key={item.label}
+      onClick={() => handleAvatarChange(item)}
+    >
+      <Avatar src={item.avatar} sx={{ width: 24, height: 24 }} />
+      {item.label}
+    </MenuItem>
+  ))}
+
+  <Divider />
+
+  <MenuItem
+    onClick={handleExit}
+    sx={{
+      color: "#ff4d4d",
+      "&:hover": {
+        bgcolor: "#2a0000",
+      },
+    }}
+  >
+    Exit
+  </MenuItem>
+</Menu>
+
       </AppBar>
 
       {/* MOBILE DRAWER */}
