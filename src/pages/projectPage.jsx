@@ -6,16 +6,16 @@ import ArrowBackIosNewIcon from "@mui/icons-material/ArrowBackIosNew";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 
 /* -------- IMAGES ARRAY -------- */
-import img1 from "../assets/youvakshi.jpg";
+import img1 from "../assets/Youvakshi.jpg";
 import smartWaterImg from "../assets/projects/smartWater.jpg";
-import img3 from "../assets/youvakshi.jpg";
-import img4 from "../assets/youvakshi.jpg";
-import img5 from "../assets/youvakshi.jpg";
+import img3 from "../assets/Youvakshi.jpg";
+import img4 from "../assets/Youvakshi.jpg";
+import img5 from "../assets/Youvakshi.jpg";
 import img6 from "../assets/BLOG.png";
-import img7 from "../assets/youvakshi.jpg";
-import img8 from "../assets/youvakshi.jpg";
+import img7 from "../assets/Youvakshi.jpg";
+import img8 from "../assets/Youvakshi.jpg";
 import mapImg from "../assets/projects/map.jpg";
-import img10 from "../assets/youvakshi.jpg";
+import img10 from "../assets/Youvakshi.jpg";
 import barbieBratzImg from "../assets/projects/barbieBratz.jpg";
 import bvlGariImg from "../assets/projects/bvlGari.jpg";
 import maxImg from "../assets/projects/max.jpeg";
