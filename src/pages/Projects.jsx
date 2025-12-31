@@ -33,12 +33,15 @@ import mapFloorPlanImg from "../assets/floorPlan/mapFloorPlan.jpg";
 import pininFarinaImg from "../assets/proposals/PininFarina.jpg";
 import inifdImg from "../assets/proposals/inifd.jpeg";
 import paypilotFloorPlanImg from "../assets/floorPlan/paypilotFloorPlan.jpg";
+import twenty47 from "../assets/floorPlan/twenty47.jpeg";
+import twenty47Img from "../assets/floorPlan/twenty47Img.jpeg";
 /* ===================== DATA ===================== */
 const pitchDecks = [
   { id: 1, pdf: "Pitch-Deck-Instawings.pdf",  image: instawingsImg, },
   { id: 2, pdf: "/Pitch-Deck-Paypilot.pdf", image: paypilotLogoImg },
   { id: 3, pdf: "/Pitch-Deck-ArkaNetwork.pdf", image: arkaNetworksImg },
   { id: 4, pdf: "/case-study", image: systechImg, },
+  { id: 5, pdf: "lVPitchDeck.pdf", image: lVImg, },
 ];
 
 const caseStudies = [
@@ -57,27 +60,12 @@ const caseStudies = [
   { id: 13, url: "/case-study", image: lorealImg },    
   { id: 14, title: "Choice Accessories", url: "/case-study" },  
   { id: 15, title: "Mobilink", url: "/case-study" },  
+  { id: 16, url: "/case-study", image: lVImg },
  
   
 ];
 
-const projects = [
-  { id: 1, title: "India’s Premier Music Festival", url: "/projects/fintech-dashboard" },
-  { id: 2, url: "/projects/marketing-website", image: smartWaterImg },
-  { id: 3, title: "Corporate Communication", url: "/projects/portfolio" },
-  { id: 4, title: "Haven And Helms", url: "/projects/admin-panel" },
-  { id: 5, title: "Paytm business Model", url: "/projects/fintech-dashboard" },
-  { id: 6, title: "Organisational structure and design of Royal Enfield Phillips heads up for tails", url: "/projects/marketing-website" },
-  { id: 7, title: "50 years of fashion transformation", url: "/projects/portfolio" },
-  { id: 8, title: "Retail Formats", url: "/projects/admin-panel" },
-  { id: 9, title: "Her Grace wedding planners", url: "/projects/fintech-dashboard" },
-  { id: 10, url: "/projects/marketing-website", image: mapImg },
-  { id: 11, title: "Globalisation and corporate culture", url: "/projects/portfolio" },
-  { id: 12, url: "/projects/admin-panel", image: barbieBratzImg },
-  { id: 13, url: "/projects/portfolio", image: lVImg },
-  { id: 14, url: "/projects/admin-panel", image: bvlGariImg },
-  
-];
+
 
 const achievements = [
   { id: 1, url: "/achievements/best-marketer", image: musicImg, },
@@ -126,7 +114,7 @@ const floorPlans = [
   
   { id: 1, previewImage: mapFloorPlanImg, image: mapImg},
   { id: 2, previewImage: paypilotFloorPlanImg, image: officialDPaypilotLogoImg },
-  // { id: 3, url: "/achievements/user-growth", image: theTapioCafeImg },
+  { id: 3, previewImage: twenty47, image: twenty47Img },
   // { id: 4, url: "/achievements/user-growth", image: thePaniEqnImg },
   // { id: 5, url: "/achievements/user-growth", image: cashValueImg },
 ];
@@ -284,7 +272,7 @@ export default function Projects() {
 
       <Box sx={{ px: { xs: 2, md: 6 }, mt: 6 }}>   
         <Section title="Pitch Decks" items={pitchDecks}/>     
-        <Section title="Projects" items={projects} />
+        
         <Section title="Case Study's" items={caseStudies} />
         <Section title="Achievements" items={achievements} />
         <Section title="Products" items={products} />

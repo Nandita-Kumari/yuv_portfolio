@@ -8,6 +8,7 @@ import Contact from "./pages/Contact";
 import PdfViewer from "./pages/PdfViewer";
 import IntroVideo from "./pages/IntroVideo";
 import WhoIsWatching from "./pages/WhoIsWatching";
+import ProjectPage from "./pages/projectPage";
 // import IntroSplash from "./pages/IntroVideo";
 
 
@@ -24,6 +25,7 @@ export default function AppRouter() {
         <Route path="/case-study" element={<CaseStudy/>} />
         <Route path="/hire-me" element={<Contact />} />
         <Route path="/viewer" element={<PdfViewer />} />
+        <Route path="/projectPage" element={<ProjectPage />} />
       </Routes>
     </BrowserRouter>
   );

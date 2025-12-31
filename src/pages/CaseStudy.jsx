@@ -4,6 +4,7 @@ import { Box, Divider, Grid, Toolbar, Typography } from "@mui/material";
 import caseStudyImg from "../assets/CaseStudy.png";
 import tescoImg from "../assets/caseStudy/tesco_image.jpeg";
 import zaraImg from "../assets/caseStudy/zara_image.jpeg";
+import incomeStmImg from "../assets/caseStudy/incomeStm.png";
 
 /* ================= DATA ================= */
 const caseStudies = [
@@ -1887,6 +1888,463 @@ our consumers.</strong></p>
       "Designed content systems, posting calendars, and brand voice guides that aligned marketing goals with audience behavior.",
   },
   
+  {
+    id: "lV",
+    title: "LV Buisness Plan",
+    content: (
+      <>
+        <h6>INTRODUCTION</h6>
+        <p><strong>Who are we ?</strong></p>
+        <p>A French luxury fashion house and company founded in 1854 by Louis vuitton. The 
+label’s LV monogram appears on most of its products, ranging from luxury bags and 
+leather goods to ready to wear shoes, perfumes , watched jewellery, accessories, 
+sunglasses and books.</p>
+
+<p><strong>Company Overview</strong></p>
+<p>One of the world’s leading international fashion houses.</p>
+<p>Sells its products through standalone boutiques, lease departments in high -end 
+departmental stores and through e- commerce section of its website</p>
+
+<h6>Vision And Mission</h6>
+
+<p><strong>Mission</strong></p>
+
+<p>The mission of the LVMH group is to represent the most refined qualities of 
+Western "Art de Vivre" around the world. LVMH must continue to be synonymous 
+with both elegance and creativity. Our products, and the cultural values they 
+embody, blend tradition and innovation, and kindle dream and fantasy.</p>
+
+<p><strong>Vision</strong></p>
+<p>LVMH has successfully preserved a family spirit that places priority on long-term 
+vision. The Group s vocation is to ensure the development of each of its Houses 
+while respecting their identities and their autonomy, providing the resources 
+needed to create, produce and market their products and services through 
+carefully selected channels. The three fundamental values articulated by Bernard 
+Arnault are shared by every member of LVMH. These three imperatives inspire 
+excellence and constitute the pillars of our performance and long-term success.</p>
+
+<p>Presentations are communication tools that can be used as demonstrations, 
+lectures, speeches, reports, and more. Most of the time, they’re presented before 
+an audience.</p>
+
+<h6>Market Analysis</h6>
+<p><strong>Target market</strong></p>
+
+<p><strong>Demographic segmentation :</strong>  Louis Vuitton’s target market consists of individuals 
+who have a higher income and thus they have found that the higher the income of 
+an individual, the higher the propensity to purchase luxury goods. .The products 
+can also be bought for personal use or for gift. Therefore, for this segmentation, 
+our targeted clients are both sex, aged between 25-50 years old, who have earned 
+an income between 30-50 lakhs yearly and most of them would be graduate 
+professionals with sense of self-worth and high social status.</p>
+
+<p><strong>Geographic segmentation :</strong> This segmentation will help the brand to do better 
+positioning by enhancing its status symbols in its wealthy market such as China, 
+Japan, India and other developing countries. One of the most important markets of 
+Louis Vuitton is not from Paris where its original is, but Asia. The brand has pursued 
+a consistent approach to developing the foreign market, never compromising in 
+the face of di cult operational obstacles, and, as always, controlling every aspect 
+of the business.</p>
+
+<h6>CONSUMER BEHAVIOUR</h6>
+
+<p><strong>1.Problem recognition stage:</strong> The people who believe that carrying a branded 
+product will enhance their status and wealth as well as fashionable.Most of the 
+users are mature (25+), female, working population with stable financial 
+background.</p>
+
+<p><strong>2.Information search:</strong> Once the consumer has recognized a problem, they start to 
+search for information on products and services that can solve that problem. First 
+time buyer will engage a little bit of time to recall their awareness about brands. 
+And each brand will carry a series of models which are suitable for di erent 
+occasions. They are tote bags, evening clutches, top handles and even accessories.</p>
+
+<p><strong>3.Evaluating and selecting alternatives:</strong> At this time, the consumer compares the 
+brands and products that are in their evoked set. They will have some choices in 
+mind for a luxury bag such as Louis Vuitton, Channel, Burberry, Gucci.</p>
+
+<p><strong>4.Outlet selection and product:</strong> For branding and luxury handbag 
+boutiques like Louis Vuitton, they are located in prestige shopping malls, whereby 
+the customers are being well-taken care of and being served as a queen when 
+shopping. Therefore, we will never experience that an LV boutiquek outlet is 
+located in any wet-markets or any neighbour-hood shopping market. 
+</p>
+
+<p><strong>5.Post purchase process:</strong> The customer, having bought a product, may feel that an 
+alternative would have been preferable. In these circumstances that customer will 
+not repurchase immediately, but is likely to switch brands next time. As mentioned 
+above, 65% of correspondents of those who have owed an LV bag in our survey 
+don’t want to be loyal with the brand and tend to select another brand for their 
+next purchase.</p>
+
+<h6>COMPETITOR ANALYSIS</h6>
+
+<p><strong>HERMES:</strong> It is well-known for their portfolio which produces about 14 products like 
+ties, scarves, leather goods, apparel for men and women, jewelry, perfume, gloves, 
+watches, footwear, tableware, and decorative items.</p>
+
+<p><strong>GUCCI:</strong>  The brand of Gucci is ranked 38th in the world during the year 2015. The 
+products of Gucci are of highest quality and it is the most luxurious items in the 
+fashion market. Very few companies match the standards of Gucci in the fashion 
+world.</p>
+
+<p><strong>PRADA:</strong> Prada is a leading player in the world of luxury. It is located in Italy. Their 
+portfolio includes manufacturing various products like clothing, fashion 
+accessories, cosmetics, jewelry, perfumes, and handbags. Prada has powerful 
+skilled employees to take up the experimentation of various products.</p>
+
+<p><strong>CHANNEL:</strong> Has a total brand value of $7 billion. It is ranked 80th among the world’s 
+most valuable brand. It is popular for its comfortable and functional clothes that 
+carry a perfect style. Due to their brand value and various products, Chanel is 
+considered one of the top luxury brands in the world.
+</p>
+
+<h6>SWOT</h6>
+
+<p><strong>Strengths</strong></p>
+<ol>
+  <li>High level of brand recognition and brand value of USD 33,6 billion[1]</li>
+  <li>Effective implementation of celebrity endorsement strategy</li>
+  <li>E cient collaboration with top designers worldwide</li>
+  <li>High level of customer loyalty</li>
+</ol>
+
+<p><strong>Weakness</strong></p>
+<ol>
+  <li>Overly expensive product prices</li>
+  <li>Lack of product innovation over the years</li>
+  <li>Weak online presence and online sales</li>
+  <li>Limited distribution channel – selling products through own stores only.</li>
+</ol>
+
+<p><strong>Opportunities</strong></p>
+<ol>
+  <li>Potential in Asia in general and in China and India in particular</li>
+  <li>Formation of strategic collaboration with other companies in other industries 
+targeting the same customer segment</li>
+<li>Revamping the brand image to make it more attractive to Millenials and 
+Generation Z</li>
+<li>Development of new products and services applying Louis Vuitton competitive 
+advantages.</li>
+</ol>
+
+<p><strong>Threats</strong></p>
+<ol>
+  <li>Increase in the cases of counterfeit of Louis Vuitton products</li>
+  <li>Global economic and/or financial crisis similar to crisis of 2008 – 2010</li>
+  <li>Intensification of competition, specifically from emerging economies</li>
+  <li>Increase in the popularity of substitute fashion products and service</li>
+</ol>
+
+<h6>ENVIRONMENTAL SCAN</h6>
+
+<p><strong>SOCIOLOGICAL:</strong> The luxury buyers are shifting to a di erent direction that Louis 
+Vuitton was not expecting. Logo- free pieces is shared by a growing number of 
+wealthy shoppers, who prefer to search for unique, hard to find pieces instead of 
+highly recognizable handbags from big recognisable brands . As Louis Vuitton, is 
+trying to boost their sales, luxury consumers are also spending their dollars into 
+experiences rather than on goods. Things such as an extravagant island.</p>
+
+<p><strong>TECHNOLOGICAL :</strong> Luxury is a synonym with Louis Vuitton and needs to serve like 
+so. We live in a world where technology reflects purchasing power and exclusivity. 
+In 2017 Louis Vuitton wanted to reflect their traveler's heritage with the release of 
+the Tambour Smart Watch and the Horizon. Earphones because they travel with 
+you. These accessories are equipped with Bluetooth technology. Created to take 
+phone calls, listen to music, multitask and be alert without the look of popular Air 
+pods. But with the exclusive design that Louis Vuitton grants. The traveler's 
+location is now synchronised with hot spots in more than seven capitals 
+worldwide. </p>
+
+<p><strong>ECONOMIC:</strong> Despite a noisy year in global stock markets and trade tensions. There 
+is only one branch of the world economy that came out of 2018 literally unscathed: 
+the luxury goods sector. LVMH, the world's largest luxury conglomerate, posted a 
+record revenue of $53.4 billion, this was a 9% increase from 2017.18% of the sales, 
+which are $9.6 billion, were net profits.</p>
+
+<p><strong>ECOLOGICAL:</strong> Louis Vuitton is in the process of implementing a responsible 
+sourcing program for all raw materials. In 2018, Louis Vuitton reached the LIFE 
+2020 target of 70% of leather goods tanneries becoming Leather Working Group 
+certified. At the same time, the House's jewelry activities have obtained the 
+Responsible Jewelry Council certification, and diamonds are
+certified by Kimberley Process as conflict free. Louis Vuitton is finding new 
+alternatives to raw materials that bring an equivalent or higher quality but with the 
+goal of lowering environmental footprints. The LVMH Eco-Material Library is 
+working on educating creative teams on the use of innovative and eco-friendly 
+materials. one of Louis Vuitton strong commitments, is making sure these 
+processes of cutting raw materials.</p>
+
+<p><strong>POLITICAL:</strong> Louis Vuitton is just finishing their new factory in the U.S outside of 
+Fort Worth, Texas. A large ranch just outside of Keene, about 28 miles south of 
+downtown Fort Worth, has been purchased by Louis Vuitton for construction of a 
+leather goods workshop to make luggage and purses.</p>
+
+<p><strong>LEGAL:</strong> In January 2016 LVMH lost for the first time in the District Court. Louis 
+Vuitton filed formal claims for trademark dilution, violation of fair use, trademark 
+infringement and copyright infringement, against My Other Bag. This brand 
+introduces itself as an "eco-friendly canvas bag with a designer twist". And its 
+products price in a very low range from $28 - $55 compared to Louis Vuitton. The 
+article states: "obvious di erences in My Other Bag's mimicking of Louis Vuitton's 
+mark, the lack of market proximity between the products at issue, and minimal, 
+unconvincing evidence of consumer confusion compel a judgment in favor of My 
+Other Bag on
+Louis Vuitton's trademark infringement claim."</p>
+
+<p><strong>ETHICAL:</strong> Louis Vuitton views protecting the environment as not simply an 
+obligation, but as source of competitiveness. Vuitton's success over the years has 
+depended directly on preserving and respecting the natural resources they use to 
+make their products. Taking environmental factors into account in their production 
+processes makes their products more reliable and appealing for consumers. As well 
+as setting the example for their competitors.</p>
+
+<h6>ECONOMICS OF BUSINESS</h6>
+
+<p><strong>Louis Vuitton’s E-commerce Revenue Model</strong></p>
+
+<p>The companies e-commerce revenue model is strictly the sale of its leather goods.
+Louis Vuitton’s site brings in as much money as some of its biggest bricks-and
+mortar shops, according to the firm’s communications director Antoine Arnault.</p>
+<p>LVMH is very selective of the sales figures they post on their corporate site, making 
+it di cult to determine the exact profit earned from its EC channel. However, on 
+April 18,2012 the company posted its earnings from the first Quarter of 2012.</p>
+<p>The group’s revenue (for the LVMH conglomerate) was up an astonishing 25 
+percent in Q1, totaling a healthy $8.6 billion.</p>
+
+<h6>MARKETING PLAN</h6>
+
+<p><strong>Product strategy:</strong></p>
+<p>Louis Vuitton is a premium luxury brand that sells finest products. It makes 100% 
+pure leather products and pays utmost care to not let be the designs and make of 
+the product easily imitable. Louis Vuitton has consciously chosen to only make 
+handmade products and not make machine made. The company hires finest 
+craftsmen and ensures that the product is completely unique.</p>
+
+<p><strong>Pricing strategy:</strong></p>
+<p>Louis Vuitton uses value based pricing in its marketing mix for its products. Since 
+customers perceive the company’s products as high value products, the customers 
+are willing to pay the amount.</p>
+
+<p><strong>Place and distribution strategy:</strong></p>
+<p>Their products are not sold at any departmental stores. The company believes in 
+having their own stores. Louis Vuitton have their highly specialized sales persons 
+trained to treat their customers with utmost care. They treat their customers with 
+high warmth and provide personalised attention.
+</p>
+
+<p><strong>Promotion and advertisements strategy:</strong></p>
+<p>Louis Vuitton employs famous musicians, actors and models in their marketing 
+campaigns. Some of the well-known personalities who have been associated with 
+the brand are Jennifer Lopez, Kate Moss, etc. Louis Vuitton Is a luxury brand and 
+hence the celebrities make a better emotional connect with the celebrities.</p>
+
+<h6>DESIGN AND DEVELOPMENT</h6>
+<p>The design depicted a Japanese-inspired flower motif, chiefly created to prevent 
+any duplicity of the Parisian company's designer luggage. This iconic LV logo has 
+now become synonymous with class, comfort, grandeur and luxury.</p>
+<p>With a brand value of over $51 million in 2020, Louis Vuitton is the most valuable 
+luxury brand in the world.</p>
+<p>The company operates in 50 countries, has a retail network of 5003 stores 
+worldwide and earned 44,7 billion euros in revenue for 2020.</p>
+<p>One of its latest flagship stores was inaugurated in February last year, in Japan.</p>
+
+<p>Business in Asia is booming for Louis Vuitton and other luxury brands. Countries 
+such as Japan, China, India and Singapore have welcomed Louis Vuitton.</p>
+
+<p>The brand opened its first store in Japan in 1918 and up until the early 2000s, the 
+Country of the Rising Sun accounted for more than half of its sales.</p>
+
+<p>China is another success story for the brand. The French leader entered the 
+Chinese market in 1992 and has seen a steady rise in its sales there. How else to 
+show success and status than to flaunt an elegant Louis Vuitton bag on your arm?
+</p>
+
+<h6>Georges Vuitton — developing the brand</h6>
+<p>When Louis passed away at 70, his son, Georges took his place at the helm of the 
+company.</p>
+<p>His father established the company, but Georges developed it into a global brand.</p>
+<p>The travel trunks made by the Vuitton company were sturdy and luxurious looking 
+which attracted burglars. With the goal to protect the traveler’s belongings from 
+burglars, Georges designed a new lock for the brand’s trunks.</p>
+<p>After years of development, the locking system, which is still used today, proved 
+revolutionary, making the Vuitton trunks impossible to be picked by burglars.</p>
+<p>In 1896, to honor his father’s legacy, Georges introduced the first LV monogram. 
+The monogram was patterned with LVs, quatrefoils, and flowers.</p>
+
+<h6>From Louis Vuitton, the company to LVMH, the luxury brand 
+powerhouse</h6>
+<p>The LVMH conglomerate came to be in 1987 when Louis Vuitton merged with 
+champagne and cognac producer Moët Hennessy.</p>
+<p>In the following years, LVMH acquired over 70 brands becoming the world’s largest 
+and most valuable luxury goods conglomerate.</p>
+<p>Here are some of the most famous luxury brands that LVMH has acquired so far:</p>
+<ul>
+  <li>Dom Pérignon (vintage Champagne)</li>
+  <li>Givenchy (fashion, cosmetics and fragrances)</li>
+  <li>Guerlain (perfume and cosmetics)</li>
+  <li>Celine (ready-to-wear and leather luxury goods)</li>
+  <li>Loewe (ready-to-wear and leather luxury goods)</li>
+  <li>Marc Jacobs (fashion)</li>
+  <li>Sephora (multinational beauty chain)</li>
+  <li>TAG Heuer (luxury watch)</li>
+  <li>Bulgari (jewelry)</li>
+  <li>Christian Dior (fashion, cosmetics and fragrances)</li>
+  <li>Ti any & Co. (jewelry)</li>
+</ul>
+
+<h6>ORGANISATIONAL FEASIBILITY</h6>
+<p><strong>Business model</strong></p>
+<p>Louis Vuitton, a luxury fashion brand and a subsidiary of the LVMH Group, operates 
+under a compelling and e ective business model. Utilizing the Business Model 
+Canvas framework, we can dissect the company’s success into these nine 
+elements:</p>
+<ol>
+  <li><strong>Value Proposition:</strong> Louis Vuitton o ers high-quality, luxury products that 
+combine style, prestige, and exclusivity. This attracts loyal customers who seek 
+unique designs and superior craftsmanship, reinforcing the brand’s strong 
+reputation in the luxury market.</li>
+<li><strong>Customer Segments:</strong> Louis Vuitton caters to a luent customers seeking high
+end fashion, leather goods, and accessories. Its primary target audience includes 
+high-net-worth individuals, celebrities, and fashion-conscious consumers from 
+around the world.</li>
+<li><strong>Channels:</strong> The brand utilizes both online and o line channels for distribution. 
+Their brick-and-mortar stores, located in prestigious shopping districts worldwide, 
+provide a luxury shopping experience. Additionally, their e-commerce platform 
+enables convenient online shopping for customers.</li>
+<li><strong>Customer Relationships:</strong> Louis Vuitton fosters strong customer relationships by 
+o ering personalized services and engaging with customers through its retail 
+stores, exclusive events, and online platforms. The brand’s trained sales associates 
+ensure a seamless shopping experience, maintaining a high level of customer 
+satisfaction.</li>
+
+<li><strong>Revenue Streams:</strong> Louis Vuitton generates revenue from the sale of luxury 
+goods, including handbags, footwear, apparel, accessories, jewelry, and timepieces. 
+The brand also derives income from licensing agreements and collaborations with 
+other brands.</li>
+
+<li><strong>Key Resources:</strong> Louis Vuitton’s key resources include its skilled artisans, 
+innovative product designers, exclusive manufacturing facilities, and extensive 
+supply chain network. Additionally, its strong brand identity and reputation are 
+integral to its continued success.
+</li>
+
+<li><strong>Key Activities:</strong> The company’s primary activities include designing, 
+manufacturing, and marketing of luxury products. They also invest in research and 
+development, ensuring innovation and creativity in new product o erings. Louis 
+Vuitton’s continuous e orts to uphold its brand image through store ambience, 
+marketing campaigns, and celebrity endorsements contribute to its overall 
+success.</li>
+
+<li><strong>Key Partners:</strong> Louis Vuitton’s partnerships range from suppliers to designers and 
+celebrities. Collaborations with renowned designers and artists keep products 
+fresh and innovative, while strategic partnerships with suppliers ensure high
+quality materials that contribute to the brand’s value proposition.</li>
+
+<li><strong>Cost Structure:</strong> The brand incurs significant costs in design, production, 
+marketing, and retail operations. They invest substantially in employing skilled 
+artisans, procurement of top-quality materials, and maintaining their exclusive 
+stores. However, these costs contribute to Louis Vuitton’s overall luxury branding, 
+justifying the premium prices charged for their products.</li>
+</ol>
+
+<h6>Organisational Type</h6>
+<p><strong>DECENTRALISED ORGANISATION </strong></p>
+<p>structure and operating principles ensure that our Maisons are both autonomous 
+and responsive. This allows them to be extremely close to customers, to ensure 
+that rapid, effective and appropriate decisions can be made. This approach also 
+sustains the motivation of employees, encouraging them to show true 
+entrepreneurial spirit.</p>
+
+<p><strong>SUPPLY CHAIN</strong></p>
+<p>To achieve certification the team focused on two key components in the supply 
+chain:</p>
+<ul>
+  <li>Inventory and supplies: precise management of sales forecasts and inventory 
+quality enables the House to use maritime shipping for part of its international 
+shipments.</li>
+<li>Logistics and transportation: Louis Vuitton uses external partners who are 
+regularly challenged against environmental criteria in requests for proposals.</li>
+</ul>
+<p>For logistics, partners work together to drive continuous improvements, mainly to 
+reduce water, electricity and packaging consumption. All Louis Vuitton logistics 
+platforms worldwide have now obtained ISO 14001. Two of its warehouses have 
+also received LEED (Leadership in Energy and Environmental Design) certification.</p>
+<p>The Louis Vuitton EOLE logistics center in Cergy, outside Paris, spearheaded and is 
+emblematic of this commitment. The center integrates exemplary environmental 
+standards with geothermal heating, enhanced building insulation, and filtering of 
+rain and wastewater. All Louis Vuitton logistics centers also combine respect for 
+the environment with optimal working conditions for employees.</p>
+<p>For product transportation, environmental impact is included right from the first 
+request for proposals sent to a dozen service providers. The RFP is written in 
+collaboration with the Logistics department, but also includes input from 
+specialists in customs clearance, finance and security. Selected transport partners 
+must then provide comprehensive reporting on their compliance with ISO 14001 
+norms.</p>
+<p>Concretely, every e ort is made to reduce greenhouse gas emissions from 
+transportation. Louis Vuitton asks its transport partners to train their drivers in 
+eco-driving, give priority to nonstop flights with a low carbon footprint and 
+whenever possible use trucks compliant with the Euro 5 and Euro 6 standards 
+(either hybrid or electric) for the final delivery kilometers to stores, whether in 
+Paris, Tokyo or Hong Kong.</p>
+
+<p>To monitor environmental performance, each zone where Louis Vuitton is present 
+around the world has an internal environmental representative who has direct 
+contact with suppliers for key environmental issues. Thanks to this proactive and 
+ongoing environmental commitment, supply chain certification is now a reality at 
+Louis Vuitton.</p>
+
+<h6>FINANCIAL PLAN</h6>
+<ul>
+  <li>An excellent first half in a still disrupted environment</li>
+  <li>Double-digit organic revenue growth for all business groups</li>
+  <li>Strong growth in Europe, Japan and the United States</li>
+  <li>Exceptional momentum in champagne and cognac</li>
+  <li>Remarkable performance by the Fashion & Leather Goods business group, 
+particularly Louis Vuitton, Christian Dior, Fendi, Celine, Loro Piana and Loewe, 
+which gained market share across the board and achieved new record highs for 
+profitability</li>
+</ul>
+
+<h6>SOURCE OF FUNDING</h6>
+
+<p><strong>Sales Revenue:</strong> The primary source of funding for Louis Vuitton is the revenue 
+generated from the sale of its luxury goods, including handbags, clothing, 
+accessories, and other products.</p>
+<p><strong>LVMH Group:</strong> Louis Vuitton is part of the larger LVMH Group, which owns multiple 
+luxury brands. The group's revenue and profits from its various subsidiaries 
+contribute to funding Louis Vuitton's operations.</p>
+
+<p><strong>Investors:</strong> LVMH is a publicly traded company, so it can raise funds by selling 
+shares of stock to investors. This capital can then be allocated to various brands 
+within the LVMH portfolio, including Louis Vuitton.</p>
+
+<p><strong>Debt Financing:</strong> Like many companies, LVMH may also use debt financing by 
+issuing bonds or taking out loans to fund its operations and expansion efforts.</p>
+
+<p><strong>Licensing and Collaborations:</strong> Louis Vuitton may engage in licensing agreements 
+and collaborations with other brands or designers, which can generate additional 
+revenue.</p>
+
+<p><strong>Retail Stores:</strong> Louis Vuitton operates a network of retail stores worldwide, and the 
+profits from these stores contribute to its funding.</p>
+
+<h6>MANUFACTURING BUDGET</h6>
+<ol>
+  <li>Material and fabric costs</li>
+  <li>Labour cost</li>
+  <li>Production FACILITIEs</li>
+  <li>Quality control</li>
+  <li>Research and development</li>
+  <li>Logistics and management</li>
+  <li>Marketing and branding</li>
+  <li>Miscellaneous costs</li>
+</ol>
+
+<h6>CONSOLIDATED INCOME STATEMENT</h6>
+{/* <img src={incomeStmImg} alt="Income Statement" /> */}
+
+      </>
+    ),
+      
+  },
   
   
 ];

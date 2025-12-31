@@ -36,7 +36,8 @@ const navItems = [
   { label: "Home", path: "/home" },
   { label: "Professional", path: "/professional" },
   { label: "Skills", path: "/skills" },
-  { label: "Projects & More", path: "/projects" },
+  { label: "Case study & More", path: "/projects" },
+  { label: "Projects", path: "/projectPage" },
   { label: "Hire me", path: "/hire-me" },
 ];
 
