@@ -35,13 +35,16 @@ import inifdImg from "../assets/proposals/inifd.jpeg";
 import paypilotFloorPlanImg from "../assets/floorPlan/paypilotFloorPlan.jpg";
 import twenty47 from "../assets/floorPlan/twenty47.jpeg";
 import twenty47Img from "../assets/floorPlan/twenty47Img.jpeg";
+import ballImg from "../assets/pitchDecks/ball.png"
 /* ===================== DATA ===================== */
 const pitchDecks = [
-  { id: 1, pdf: "Pitch-Deck-Instawings.pdf",  image: instawingsImg, },
-  { id: 2, pdf: "/Pitch-Deck-Paypilot.pdf", image: paypilotLogoImg },
-  { id: 3, pdf: "/Pitch-Deck-ArkaNetwork.pdf", image: arkaNetworksImg },
-  { id: 4, pdf: "/case-study", image: systechImg, },
-  { id: 5, pdf: "lVPitchDeck.pdf", image: lVImg, },
+  { id: 1, pdf: "cricketAcademy.pdf", image: ballImg},
+  { id: 2, pdf: "Pitch-Deck-Instawings.pdf",  image: instawingsImg, },
+  { id: 3, pdf: "/Pitch-Deck-Paypilot.pdf", image: paypilotLogoImg },
+  { id: 4, pdf: "/Pitch-Deck-ArkaNetwork.pdf", image: arkaNetworksImg },
+  { id: 5, pdf: "/case-study", image: systechImg, },
+  { id: 6, pdf: "lVPitchDeck.pdf", image: lVImg, },
+  
 ];
 
 const caseStudies = [

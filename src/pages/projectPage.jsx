@@ -101,7 +101,7 @@ const handleClick = (item) => {
           Projects
         </Typography>
 
-        <Typography variant="p" sx={{ opacity: 0.85, mt: 3 }}>
+        <Typography variant="p" sx={{ opacity: 0.85, mt: 6 }}>
           Years of quiet persistence
           <br />
           My foundational marketing adventures.
@@ -113,7 +113,7 @@ const handleClick = (item) => {
       
         sx={{
           position: "relative",
-          mt: 10,
+          mt: 7,
           height: 520,
           display: "flex",
           justifyContent: "center",
