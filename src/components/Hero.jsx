@@ -4,9 +4,9 @@ import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import PlayArrowIcon from '@mui/icons-material/PlayArrow';
 import ErrorOutlineIcon from '@mui/icons-material/ErrorOutline';
-import video from '../assets/IMG_5852.mp4';
 
-export default function Hero() {
+
+export default function Hero({ videoSrc }) {
   return (
     <Box
       sx={{
@@ -18,7 +18,7 @@ export default function Hero() {
     >
       {/* Video */}
       <video
-        src={video}
+        src={videoSrc}
         autoPlay
         muted
         loop

@@ -35,7 +35,8 @@ import inifdImg from "../assets/proposals/inifd.jpeg";
 import paypilotFloorPlanImg from "../assets/floorPlan/paypilotFloorPlan.jpg";
 import twenty47 from "../assets/floorPlan/twenty47.jpeg";
 import twenty47Img from "../assets/floorPlan/twenty47Img.jpeg";
-import ballImg from "../assets/pitchDecks/ball.png"
+import ballImg from "../assets/pitchDecks/ball.png";
+import projectVideo from '../assets/project_video.mp4';
 /* ===================== DATA ===================== */
 const pitchDecks = [
   { id: 1, pdf: "cricketAcademy.pdf", image: ballImg},
@@ -271,7 +272,7 @@ export default function Projects() {
     >
       <Navbar />
       <Toolbar />
-      <Hero />
+      <Hero videoSrc={projectVideo}/>
 
       <Box sx={{ px: { xs: 2, md: 6 }, mt: 6 }}>   
         <Section title="Pitch Decks" items={pitchDecks}/>     
