@@ -254,6 +254,7 @@ important factor in motivating employees. This may be through 1-to-1 discussions
     title: "ZARA",
     content: (
       <>
+      <section id="zara">
         <h6>Business communication in ZARA</h6>
         <p>ZARA is a Spanish multinational retail clothing chain
           which comes under Inditex group.
@@ -331,6 +332,8 @@ harder time meeting expectations and catching up
 with their deadlines, resulting in them getting
 behind. This could leave them with a sense of
 guilt, embarrassment or even low self-esteem</p>
+      
+      </section>
       </>
     ),
   },
@@ -341,6 +344,7 @@ guilt, embarrassment or even low self-esteem</p>
       "Tommy Hilfiger",
     content: (
       <>
+      <section id="tommy">
         <h6>Market Interactions</h6>
         <p>Brand Style: Tommy Hilfiger has a cool American style that lots of people like.</p>
         <p>Who They're Talking To: They make clothes for young people and professionals who want to look fashionable.</p>
@@ -448,6 +452,7 @@ like you're in a magazine.</p>
 for those.</p>
 <p>Cool Extras: Some stores have neat stuff like screens or pictures that tell
 you more about Tommy Hilfiger.</p>
+      </section>
       </>
     ),
   },
@@ -458,6 +463,7 @@ you more about Tommy Hilfiger.</p>
       "Multidisciplinary analysis of interfaces; supply chain Event management (SCEM) – RFID control theory",
     content: (
       <>
+      <section id="multidisciplinary">
         <h6>Analyzing the interfaces between Supply Chain Event
 Management (SCEM), Radio-Frequency Identification (RFID),
 and control theory requires a multi-disciplinary approach.</h6>
@@ -589,6 +595,7 @@ to service the customers within a few hours from the time the request is receive
 such customer service oriented policies increase the dy- namism of the system and therefore
 its complexity. Dur- ing the past decade the number of published papers deal- ing with
 dynamic transportation models has been growing.</p>
+      </section>
       </>
     ),
       
@@ -598,6 +605,7 @@ dynamic transportation models has been growing.</p>
     title: "Google organisational culture",
     content: (
       <>
+      <section id="google">
         <h6>INTRODUCTION</h6>
         <p>Google founded in 1998 by Larry Page and Sergey Brin, is a multinational technology
 company, has evolved far beyond its origins as a search engine. The company is deeply
@@ -868,6 +876,7 @@ flexibility, and a commitment to fostering a dynamic work environment. While it 
 to a completely flat structure, Google emphasizes a more open and less hierarchical culture,
 encouraging collaboration and creativity across various levels of the organisation.
 </p>
+      </section>
       </>
     )
       
@@ -877,6 +886,7 @@ encouraging collaboration and creativity across various levels of the organisati
     title: "Artificial intelligence vs Human intelligence",
     content: (
       <>
+      <section id="artificial">
         <h6>Artifi cial Intelligence (AI):</h6>
         <p>Artifi cial Intelligence refers to the development of computer systems that can perform tasks that
 typically require human intelligence. These tasks include learning, reasoning, problem-solving,
@@ -1283,6 +1293,7 @@ ethical considerations, and the well-being of society. While AI presents excitin
 careful planning and thoughtful integration are essential to navigate the challenges and
 opportunities that lie ahead.</strong></p>
 
+    </section>
     </>
     ),
       
@@ -1293,6 +1304,7 @@ opportunities that lie ahead.</strong></p>
       "Reviewing of Nike supply chain and Stake holder engagement ",
     content: (
       <>
+      <section id="nike">
         <p>Nike is a globally recognized brand known for its innovative sports apparel and
 footwear. Founded in 1964, Nike's core values include innovation, sustainability,
 and empowerment. The company off ers a wide range of products for various
@@ -1382,6 +1394,7 @@ hotspots, and prioritizing areas for intervention. By taking a holistic approach
 supply chain analysis, Nike ensures that sustainability considerations are
 integrated into every aspect of its operations, driving positive environmental
 and social outcomes.</p>
+      </section>
       </>
     ),
       
@@ -1391,6 +1404,7 @@ and social outcomes.</p>
     title: "Raymonds",
     content: (
       <>
+      <section id="raymond">
         <p>The largest integrated 
 manufacturer of fabric in the 
 world that is based in Mumbai 
@@ -1504,6 +1518,7 @@ individuality which is evident in their mens
 fashion.Raymond with its 97 year old expertise is a textile 
 powerhouse with modern infrastructure aking with being 
 reputed.</p>
+      </section>
       </>
     )
   },
@@ -1513,152 +1528,153 @@ reputed.</p>
     content:
       "Designed content systems, posting calendars, and brand voice guides that aligned marketing goals with audience behavior.",
   },
-  {
-    id: "visual",
-    title:
-      "Visual merchandise",
-    content:
-      "Designed content systems, posting calendars, and brand voice guides that aligned marketing goals with audience behavior. Achieved consistent growth across platforms, increased saves, shares, and conversions while maintaining brand authenticity. Achieved consistent growth across platforms, increased saves, shares, and conversions while maintaining brand authenticity.Put in 100+ hours of research per case study checking trends, testing ideas, and working with remote teams. Turned weak posts into 3x engagement wins and up to 300% growth in followers and sales.",
-  },
-  {
-    id: "VM",
-    title: "Materials used in VM",
-    content: (
-        <>
-            <h6>INTRODUCTION</h6>
-            <p>Visual merchandising involves using different
-materials and elements to create visually appealing
-displays and improve the overall shopping
-experience for customers. These documents help
-showcase the product, tell a story, and grab the
-buyer's attention. Here are some common materials
-used in visual sales:</p>
-<p><strong>Mannequins - Forms</strong></p>
-<p>Mannequins, body shapes
-and skirts are essential for
-displaying clothing and
-accessories, allowing
-customers to visualize
-how items will look once
-they are put on.</p>
+//   {
+//     id: "visual",
+//     title:
+//       "Visual merchandise",
+//     content:
+//       "Designed content systems, posting calendars, and brand voice guides that aligned marketing goals with audience behavior. Achieved consistent growth across platforms, increased saves, shares, and conversions while maintaining brand authenticity. Achieved consistent growth across platforms, increased saves, shares, and conversions while maintaining brand authenticity.Put in 100+ hours of research per case study checking trends, testing ideas, and working with remote teams. Turned weak posts into 3x engagement wins and up to 300% growth in followers and sales.",
+//   },
+//   {
+//     id: "VM",
+//     title: "Materials used in VM",
+//     content: (
+//         <>
+//             <h6>INTRODUCTION</h6>
+//             <p>Visual merchandising involves using different
+// materials and elements to create visually appealing
+// displays and improve the overall shopping
+// experience for customers. These documents help
+// showcase the product, tell a story, and grab the
+// buyer's attention. Here are some common materials
+// used in visual sales:</p>
+// <p><strong>Mannequins - Forms</strong></p>
+// <p>Mannequins, body shapes
+// and skirts are essential for
+// displaying clothing and
+// accessories, allowing
+// customers to visualize
+// how items will look once
+// they are put on.</p>
 
-<p><strong>PROPS</strong></p>
-<p>Props can range from
-simple items like crates,
-baskets, and stands to
-more complex items
-like themed
-decorations, sculptures
-or installations that
-create an atmosphere or
-specific context.</p>
+// <p><strong>PROPS</strong></p>
+// <p>Props can range from
+// simple items like crates,
+// baskets, and stands to
+// more complex items
+// like themed
+// decorations, sculptures
+// or installations that
+// create an atmosphere or
+// specific context.</p>
 
-<p><strong>Signage and Graphics</strong></p>
-<p>Clear and eye-catching
-signs, banners, posters
-and graphics help convey
-important
-information,promotions
-and brand messages to
-customers. 
-</p>
-
-
-<p><strong>Lighting</strong></p>
-<p>The right lighting can have a huge
-impact on the visual appeal of a
-display. Different types of lighting,
-such as spotlights, ambient lighting,
-and accent lighting, can create mood
-and focus on specific products.</p>
-
-<p><strong>Mirror</strong></p>
-<p>Mirrors are often strategically placed
-to help customers see themselves
-wearing or using a product. They can
-also be used to create the illusion of a
-larger space. 
-</p>
-
-<p><strong>Shelves</strong></p>
-
-<p>Racks, display tables and shelves
-are well designed to help organize
-products, making it easy for
-customers to access products. They
-also contribute to the overall
-aesthetic of the display.
-</p>
+// <p><strong>Signage and Graphics</strong></p>
+// <p>Clear and eye-catching
+// signs, banners, posters
+// and graphics help convey
+// important
+// information,promotions
+// and brand messages to
+// customers. 
+// </p>
 
 
-<p><strong>Flooring</strong></p>
-<p>Flooring materials, textures, and
-patterns can complement the overall
-aesthetic and theme of a display
-area. Different flooring choices can
-influence how customers perceive
-the products and the brand.
-</p>
+// <p><strong>Lighting</strong></p>
+// <p>The right lighting can have a huge
+// impact on the visual appeal of a
+// display. Different types of lighting,
+// such as spotlights, ambient lighting,
+// and accent lighting, can create mood
+// and focus on specific products.</p>
+
+// <p><strong>Mirror</strong></p>
+// <p>Mirrors are often strategically placed
+// to help customers see themselves
+// wearing or using a product. They can
+// also be used to create the illusion of a
+// larger space. 
+// </p>
+
+// <p><strong>Shelves</strong></p>
+
+// <p>Racks, display tables and shelves
+// are well designed to help organize
+// products, making it easy for
+// customers to access products. They
+// also contribute to the overall
+// aesthetic of the display.
+// </p>
 
 
-<p><strong>Textures and Fabrics</strong></p>
-<p>Incorporating different textures and
-fabrics can add depth and tactile
-appeal to displays. These materials
-can be used as backdrops,
-tablecloths, or drapery.
-</p>
+// <p><strong>Flooring</strong></p>
+// <p>Flooring materials, textures, and
+// patterns can complement the overall
+// aesthetic and theme of a display
+// area. Different flooring choices can
+// influence how customers perceive
+// the products and the brand.
+// </p>
 
 
-<p><strong>Graphics and Branding</strong></p>
-<p>Graphics, including logos, product
-images, and brand messages,
-contribute to brand identity and
-recognition. They can be applied to
-various surfaces like walls, windows,
-and floors.
-</p>
-
-<p><strong>Interactive Elements</strong></p>
-<p>Interactive displays, touchscreens,
-and digital interfaces engage
-customers and provide additional
-information about products,
-promotions, or brand stories.
-</p>
+// <p><strong>Textures and Fabrics</strong></p>
+// <p>Incorporating different textures and
+// fabrics can add depth and tactile
+// appeal to displays. These materials
+// can be used as backdrops,
+// tablecloths, or drapery.
+// </p>
 
 
-<p><strong>Natural Elements</strong></p>
-<p>Natural elements such as plants,
-flowers, and natural materials like
-wood and stone can add an organic
-and refreshing touch to displays.
-</p>
+// <p><strong>Graphics and Branding</strong></p>
+// <p>Graphics, including logos, product
+// images, and brand messages,
+// contribute to brand identity and
+// recognition. They can be applied to
+// various surfaces like walls, windows,
+// and floors.
+// </p>
+
+// <p><strong>Interactive Elements</strong></p>
+// <p>Interactive displays, touchscreens,
+// and digital interfaces engage
+// customers and provide additional
+// information about products,
+// promotions, or brand stories.
+// </p>
 
 
-<p><strong>Technology</strong></p>
-<p>Modern visual merchandising often
-integrates technology, such as
-digital screens, augmented reality,
-and virtual reality, to provide
-interactive and dynamic displays.
-</p>
-        </>
-    ),
+// <p><strong>Natural Elements</strong></p>
+// <p>Natural elements such as plants,
+// flowers, and natural materials like
+// wood and stone can add an organic
+// and refreshing touch to displays.
+// </p>
+
+
+// <p><strong>Technology</strong></p>
+// <p>Modern visual merchandising often
+// integrates technology, such as
+// digital screens, augmented reality,
+// and virtual reality, to provide
+// interactive and dynamic displays.
+// </p>
+//         </>
+//     ),
       
-  },
-  {
-    id: "evolution",
-    title:
-      "Evolution of luxury brands",
-    content:
-      "Achieved consistent growth across platforms, increased saves, shares, and conversions while maintaining brand authenticity.",
-  },
+//   },
+  // {
+  //   id: "evolution",
+  //   title:
+  //     "Evolution of luxury brands",
+  //   content:
+  //     "Achieved consistent growth across platforms, increased saves, shares, and conversions while maintaining brand authenticity.",
+  // },
   {
     id: "display",
     title: "Display dissapointment",
     content: (
                 <>
+                <section id="display">
                     <h6>what is the greatest
 challenge a visual
 merchandiser faces
@@ -1758,6 +1774,7 @@ grouped properly acc to the theme and storytelling , the
 background was overshadowing the merchandise , color
 coordination was bad so overall it was fail.
 </p>
+                </section>
                 </>
     ),
       
@@ -1768,6 +1785,7 @@ coordination was bad so overall it was fail.
       "Men buy women shop",
     content: (
         <>
+        <section id="men">
             <h6>Why do most stores display merchandise on hang rods rather than in stacks?</h6>
             <p><strong>Visibility and Accessibility:</strong> Hanging merchandise on rods provides better visibility of individual items. Shoppers can easily see the colors, patterns, and styles without needing to dig through stacks of clothing.</p>
 
@@ -1813,6 +1831,7 @@ coordination was bad so overall it was fail.
                 More responsive to marketing emails, coupons and sales. More respective to other people's opinions. Need online chat feature,
                 discussion forums, high-quality visuals, customer reviews.
             </p>
+        </section>
         </>
     ),
       
@@ -1822,6 +1841,7 @@ coordination was bad so overall it was fail.
     title: "Loreal ",
     content: (
       <>
+      <section id="loreal">
         <h6>1. Distinguish between thecore,tangible and augmented productthatL’Oréalsells.</h6>
         <p><strong>Three levels of a product</strong></p>
         <ul>
@@ -1883,22 +1903,24 @@ concentrated yet operationally decentralized.
 Local teams are empowered. They ensure that
 in every country we are close and relevant to
 our consumers.</strong></p>
+      </section>
       </>
       ),
   },
   
-  {
-    id: "mobilink",
-    title: "Mobilink",
-    content:
-      "Designed content systems, posting calendars, and brand voice guides that aligned marketing goals with audience behavior.",
-  },
+  // {
+  //   id: "mobilink",
+  //   title: "Mobilink",
+  //   content:
+  //     "Designed content systems, posting calendars, and brand voice guides that aligned marketing goals with audience behavior.",
+  // },
   
   {
     id: "lV",
     title: "LV Buisness Plan",
     content: (
       <>
+      <section id="lv">
         <h6>INTRODUCTION</h6>
         <p><strong>Who are we ?</strong></p>
         <p>A French luxury fashion house and company founded in 1854 by Louis vuitton. The 
@@ -2347,6 +2369,7 @@ profits from these stores contribute to its funding.</p>
 <h6>CONSOLIDATED INCOME STATEMENT</h6>
 {/* <img src={incomeStmImg} alt="Income Statement" /> */}
 
+      </section>
       </>
     ),
       
