@@ -49,27 +49,25 @@ const pitchDecks = [
 ];
 
 const caseStudies = [
-  { id: 1, url: "/case-study", image: ikeaImg, },
-  { id: 2, url: "/case-study", image: tescoImg },
-  // { id: 3, url: "/case-study", image: zaraImg },
-  // { id: 4, url: "/case-study", image: tommyHilfigerImg },
-  { id: 5, title: "Multidisciplinary analysis of interfaces; supply chain Event  management (SCEM)– RFID control theory", url: "/case-study" },
-  { id: 6, url: "/case-study", image: googleImg },
-  { id: 7, title: "Artificial intelligence vs Human intelligence", url: "/case-study" },
-  { id: 8, url: "/case-study", image: nikeImg },
-  // { id: 9, url: "/case-study", image: raymondImg },
-  { id: 10, title: "Legal policies and best practices", url: "/case-study" }, 
-  { id: 11, title: "Display dissapointment", url: "/case-study" },
-  { id: 12, title: "Men buy women shop", url: "/case-study" },
-  { id: 13, url: "/case-study", image: lorealImg },    
-  { id: 14, title: "Choice Accessories", url: "/case-study" },  
-  { id: 15, title: "Mobilink", url: "/case-study" },  
-  { id: 16, url: "/case-study", image: lVImg },
+  { id: 1, url: "/case-study", image: ikeaImg, targetId: "ikea" },
+  { id: 2, url: "/case-study", image: tescoImg, targetId: "tesco" },
+  // { id: 3, url: "/case-study", image: zaraImg, targetId: "zara" },
+  // { id: 4, url: "/case-study", image: tommyHilfigerImg, targetId: "tommy"},
+  { id: 5, title: "Multidisciplinary analysis of interfaces; supply chain Event  management (SCEM)– RFID control theory", url: "/case-study", targetId: "multidisciplinary" },
+  { id: 6, url: "/case-study", image: googleImg, targetId: "google" },
+  { id: 7, title: "Artificial intelligence vs Human intelligence", url: "/case-study", targetId: "artificial" },
+  { id: 8, url: "/case-study", image: nikeImg, targetId: "nike" },
+  // { id: 9, url: "/case-study", image: raymondImg, targetId: "raymond" },
+  { id: 10, title: "Legal policies and best practices", url: "/case-study", targetId: "legal" }, 
+  { id: 11, title: "Display dissapointment", url: "/case-study", targetId: "display" },
+  { id: 12, title: "Men buy women shop", url: "/case-study", targetId: "men" },
+  { id: 13, url: "/case-study", image: lorealImg, targetId: "loreal" },    
+  { id: 14, title: "Choice Accessories", url: "/case-study", targetId: "choice" },  
+  { id: 15, title: "Mobilink", url: "/case-study", targetId: "mobilink" },  
+  { id: 16, url: "/case-study", image: lVImg, targetId: "lv" },
  
   
 ];
-
-
 
 const achievements = [
   { id: 1, url: "/achievements/best-marketer", image: musicImg, },
@@ -140,7 +138,9 @@ const Section = ({ title, items }) => {
   }
 
   if (item.url) {
-    navigate(item.url);
+    navigate(item.url, {
+      state: { scrollTo: item.targetId }, // 🔥 KEY LINE
+    });
   }
 };
 
@@ -193,7 +193,7 @@ const Section = ({ title, items }) => {
               scrollSnapAlign: "start",
 
               backgroundImage: item.image ? `url(${item.image})` : "none",
-              backgroundSize: "cover",
+              backgroundSize: "contain",
 backgroundRepeat: "no-repeat",
 backgroundPosition: "center",
 

@@ -32,7 +32,6 @@ const images = [
   { img: img6, title: "Royal Enfield Phillips" },
   { img: img7, title: "50 years of fashion transformation" },
   { img: img8, title: "Her Grace wedding planners" },
-  { img: mapImg, title: "Analytics Setup" },
   { img: img10, title: "Globalisation and corporate culture" },
   { img: barbieBratzImg, title: "Barbie vs Bratz", pdf: "barbieBratz.pdf" }, 
   { img: bvlGariImg, title: "BVLGARI" },
@@ -155,7 +154,7 @@ const handleClick = (item) => {
         style={{
           width: index === activeIndex ? 300 : 280,
           height: index === activeIndex ? 420 : 380,
-          objectFit: "cover",
+          objectFit: "contain",
           borderRadius: 6,
         }}
       />

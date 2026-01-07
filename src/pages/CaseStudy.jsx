@@ -5,6 +5,7 @@ import caseStudyImg from "../assets/CaseStudy.png";
 import tescoImg from "../assets/caseStudy/tesco_image.jpeg";
 import zaraImg from "../assets/caseStudy/zara_image.jpeg";
 import incomeStmImg from "../assets/caseStudy/incomeStm.png";
+import { useLocation } from "react-router-dom";
 
 /* ================= DATA ================= */
 const caseStudies = [
@@ -13,6 +14,7 @@ const caseStudies = [
     title: "IKEA",
     content: (
       <>
+      <section id="ikea">
         <h6>Market Interactions</h6>
         <p>Product Display and Layout: IKEA stores are known for their unique
 layout, which guides customers through various product displays and
@@ -127,6 +129,8 @@ in your home.</p>
 there.</p>
 <p>Extra Help: If you need it, IKEA can deliver your stuff or even help you put
 it together.</p>
+      
+      </section>
       </>
     ),
   },
@@ -137,6 +141,7 @@ it together.</p>
     content:
       (
     <>
+    <section id="tesco">
       <h6>WHAT IS THE PRESENT STAFF STRUCTURE AT TESCO?</h6>
       <p>
         Organizational structure consists of three groups of employees at the top, mediate and base level of management. At the top level , there is a board of ten directors with the chief executive officer (CEO), Ken Murphy
@@ -239,6 +244,7 @@ important, giving them a degree of freedom to make choices and acknowledging the
 <p>At Tesco the Mayo theory is seen to be operating throughout the company. Communication is an extremely
 important factor in motivating employees. This may be through 1-to-1 discussions with managers, through the company intranet or newsletters or through more formal structures such as appraisals</p>
 
+    </section>
     </>
       ),
   },
@@ -2349,12 +2355,84 @@ profits from these stores contribute to its funding.</p>
   
 ];
 
+/* ===== Helper to detect sub-headings ===== */
+const isSubHeading = (child) => {
+  if (!React.isValidElement(child)) return false;
+  if (child.props?.variant === "h6") return true; // MUI Typography
+  if (child.type === "h6") return true;           // HTML h6
+  return false;
+};
+
+/* ===== Recursive rendering of content with stable sub IDs ===== */
+const renderContent = (content, itemId, subSectionRefs, counter = { value: 0 }) => {
+  if (!React.isValidElement(content)) return <Typography>{content}</Typography>;
+
+  if (isSubHeading(content)) {
+    const subId = `${itemId}-sub-${counter.value}`;
+    counter.value += 1;
+
+    return (
+      <Typography
+        key={subId}
+        ref={(el) => (subSectionRefs.current[subId] = el)}
+        data-id={subId}
+        variant="h6"
+        sx={{ mt: 3, mb: 1, fontWeight: 600, scrollMarginTop: "120px" }}
+      >
+        {content.props.children}
+      </Typography>
+    );
+  }
+
+  if (content.props?.children) {
+    return React.Children.map(content.props.children, (child) =>
+      renderContent(child, itemId, subSectionRefs, counter)
+    );
+  }
+
+  return <Typography>{content.props?.children || null}</Typography>;
+};
+
+/* ===== Recursive extraction of sub-topics with stable IDs ===== */
+const getSubTopics = (content, itemId, counter = { value: 0 }) => {
+  if (!React.isValidElement(content)) return [];
+
+  let topics = [];
+
+  if (isSubHeading(content)) {
+    const subId = `${itemId}-sub-${counter.value}`;
+    counter.value += 1;
+    topics.push({ id: subId, label: content.props.children });
+  }
+
+  if (content.props?.children) {
+    React.Children.forEach(content.props.children, (child) => {
+      topics = topics.concat(getSubTopics(child, itemId, counter));
+    });
+  }
+
+  return topics;
+};
+
 /* ================= COMPONENT ================= */
 export default function CaseStudy() {
   const sectionRefs = useRef({});
+  const subSectionRefs = useRef({});
   const [activeSection, setActiveSection] = useState(null);
+  const location = useLocation();
 
-  /* ===== Scroll Spy Logic ===== */
+  /* ===== ROUTE SCROLL ===== */
+  useEffect(() => {
+    if (location.state?.scrollTo) {
+      const id = location.state.scrollTo;
+      setTimeout(() => {
+        sectionRefs.current[id]?.scrollIntoView({ behavior: "smooth", block: "start" });
+        setActiveSection(id);
+      }, 300);
+    }
+  }, [location.state]);
+
+  /* ===== SCROLL SPY ===== */
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
@@ -2364,15 +2442,11 @@ export default function CaseStudy() {
           }
         });
       },
-      {
-        rootMargin: "-30% 0px -60% 0px",
-        threshold: 0,
-      }
+      { rootMargin: "-30% 0px -60% 0px", threshold: 0 }
     );
 
-    Object.values(sectionRefs.current).forEach((el) => {
-      if (el) observer.observe(el);
-    });
+    Object.values(sectionRefs.current).forEach((el) => el && observer.observe(el));
+    Object.values(subSectionRefs.current).forEach((el) => el && observer.observe(el));
 
     return () => observer.disconnect();
   }, []);
@@ -2382,11 +2456,10 @@ export default function CaseStudy() {
       <Navbar />
       <Toolbar />
 
-      {/* ========== HERO SECTION ========== */}
+      {/* ===== HERO ===== */}
       <Box
         sx={{
           px: { xs: 2, md: 8 },
-        //   mt: 6,
           display: "grid",
           gridTemplateColumns: { xs: "1fr", md: "1fr 1fr" },
           gap: 6,
@@ -2394,21 +2467,16 @@ export default function CaseStudy() {
         }}
       >
         <Box>
-          <Typography
-            variant="h3"
-            sx={{ fontWeight: 700, letterSpacing: "2px", mb: 3, color: "#db00009b" }}
-          >
+          <Typography variant="h3" sx={{ fontWeight: 700, letterSpacing: "2px", mb: 3, color: "#db00009b" }}>
             MEMES TO METRICS
           </Typography>
-
           <Typography variant="h6" sx={{ opacity: 0.85, mb: 2 }}>
             Building Brands That Stick
           </Typography>
-
           <Typography sx={{ opacity: 0.85, lineHeight: 1.8 }}>
-            Put in 100+ hours of research per case study checking trends, testing
-            ideas, and working with remote teams. Turned weak posts into 3x
-            engagement wins and up to 300% growth in followers and sales.
+            Put in 100+ hours of research per case study checking trends, testing ideas,
+            and working with remote teams. Turned weak posts into 3x engagement wins and
+            up to 300% growth in followers and sales.
           </Typography>
         </Box>
 
@@ -2417,7 +2485,7 @@ export default function CaseStudy() {
         </Box>
       </Box>
 
-      {/* ========== MAIN CONTENT GRID ========== */}
+      {/* ===== MAIN GRID ===== */}
       <Box
         sx={{
           px: { xs: 2, md: 8 },
@@ -2427,94 +2495,109 @@ export default function CaseStudy() {
           gap: 6,
         }}
       >
-        {/* LEFT CONTENT */}
+        {/* ===== LEFT CONTENT ===== */}
         <Box>
           {caseStudies.map((item) => (
-  <Box
-    key={item.id}
-    ref={(el) => (sectionRefs.current[item.id] = el)}
-    data-id={item.id}
-    sx={{
-      mb: 5,
-      scrollMarginTop: "120px", // ✅ FIX
-    }}
-  >
-    <Typography
-      variant="h6"
-      sx={{
-        fontWeight: 700,
-        letterSpacing: "1.5px",
-        color: "#db00009b",
-        mb: 1,
-      }}
-    >
-      {item.title}
-    </Typography>
+            <Box
+              key={item.id}
+              ref={(el) => (sectionRefs.current[item.id] = el)}
+              data-id={item.id}
+              sx={{ mb: 6, scrollMarginTop: "120px" }}
+            >
+              <Typography
+                variant="h6"
+                sx={{ fontWeight: 700, letterSpacing: "1.5px", color: "#db00009b", mb: 2 }}
+              >
+                {item.title}
+              </Typography>
 
-    <Typography sx={{ opacity: 0.85, fontSize: "0.75rem", lineHeight: 1.8 }}>
-      {item.content}
-    </Typography>
-  </Box>
-))}
-
+              <Box sx={{ fontSize: "0.75rem", lineHeight: 1.8, opacity: 0.85 }}>
+                {renderContent(item.content, item.id, subSectionRefs)}
+              </Box>
+            </Box>
+          ))}
         </Box>
 
-        {/* RIGHT HIGHLIGHTS */}
+        {/* ===== RIGHT HIGHLIGHTS ===== */}
         <Box
           sx={{
             backgroundColor: "#0e0e0e",
             borderRadius: "16px",
             p: 4,
-            height: "fit-content",
+            maxHeight: "70vh",
+            overflowY: "auto",
             position: { md: "sticky" },
             top: 100,
+            scrollbarWidth: "thin",
+            scrollbarColor: "#db0000 #1a1a1a",
+            "&::-webkit-scrollbar": { width: "6px" },
+            "&::-webkit-scrollbar-track": { background: "#1a1a1a" },
+            "&::-webkit-scrollbar-thumb": {
+              background: "#db0000",
+              borderRadius: "10px",
+            },
           }}
         >
           <Typography
-  variant="h5"
-  sx={{
-    fontWeight: 700,
-    mb: 3,
-    p: 1.5,
-    borderRadius: "10px",
-    border: "1px solid rgba(219, 0, 0, 0.25)",
-    boxShadow: "0 0 18px rgba(219, 0, 0, 0.35)",
-  }}
->
-  CASE STUDY HIGHLIGHTS
-</Typography>
-
+            variant="h5"
+            sx={{
+              fontWeight: 700,
+              mb: 3,
+              p: 1.5,
+              borderRadius: "10px",
+              border: "1px solid rgba(219,0,0,0.25)",
+              boxShadow: "0 0 18px rgba(219,0,0,0.35)",
+            }}
+          >
+            CASE STUDY HIGHLIGHTS
+          </Typography>
 
           <Divider sx={{ mb: 3, backgroundColor: "#333" }} />
 
-          {caseStudies.map((item) => (
-            <Typography
-              key={item.id}
-              onClick={() =>
-                sectionRefs.current[item.id]?.scrollIntoView({
-                  behavior: "smooth",
-                })
-              }
-              sx={{
-                mb: 1,
-                cursor: "pointer",
-                fontSize: "0.8rem",
-                color:
-                  activeSection === item.id ? "#db0000" : "rgba(255,255,255,0.85)",
-                fontWeight: activeSection === item.id ? 600 : 400,
-                paddingLeft: activeSection === item.id ? "8px" : "0",
-                transition: "0.3s",
-                "&:hover": {
-                  color: "#db0000",
-                  paddingLeft: "8px",
-                },
-              }}
-            >
-              • {item.title.length > 35
-                ? item.title.slice(0, 35) + "..."
-                : item.title}
-            </Typography>
-          ))}
+          {caseStudies.map((item) => {
+            const subTopics = getSubTopics(item.content, item.id);
+
+            return (
+              <Box key={item.id} sx={{ mb: 2 }}>
+                {/* MAIN */}
+                <Typography
+                  onClick={() =>
+                    sectionRefs.current[item.id]?.scrollIntoView({ behavior: "smooth" })
+                  }
+                  sx={{
+                    cursor: "pointer",
+                    fontSize: "0.8rem",
+                    mb: 0.5,
+                    color: activeSection === item.id ? "#db0000" : "rgba(255,255,255,0.85)",
+                    fontWeight: activeSection === item.id ? 600 : 400,
+                  }}
+                >
+                  • {item.title}
+                </Typography>
+
+                {/* SUB TOPICS */}
+                {subTopics.map((sub) => (
+                  <Typography
+                    key={sub.id}
+                    onClick={() =>
+                      subSectionRefs.current[sub.id]?.scrollIntoView({ behavior: "smooth" })
+                    }
+                    sx={{
+                      ml: 2,
+                      mb: 0.3,
+                      cursor: "pointer",
+                      fontSize: "0.72rem",
+                      color: activeSection === sub.id ? "#db0000" : "rgba(255,255,255,0.6)",
+                      fontWeight: activeSection === sub.id ? 500 : 400,
+                      "&:hover": { color: "#db0000" },
+                    }}
+                  >
+                    – {sub.label}
+                  </Typography>
+                ))}
+              </Box>
+            );
+          })}
         </Box>
       </Box>
     </Box>
