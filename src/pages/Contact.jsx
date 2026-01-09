@@ -97,16 +97,25 @@ export default function Contact() {
       </Typography>
 
       <Button
-        variant="contained"
-        startIcon={<LinkedInIcon />}
-        sx={{
-          backgroundColor: "#0A66C2",
-          textTransform: "none",
-          fontWeight: 600,
-        }}
-      >
-        Connect on LinkedIn
-      </Button>
+  component="a"
+  href="https://www.linkedin.com/in/youvakshi-thakur-1a9585166?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+  target="_blank"
+  rel="noopener noreferrer"
+  variant="contained"
+  startIcon={<LinkedInIcon />}
+  sx={{
+    backgroundColor: "#0A66C2",
+    textTransform: "none",
+    fontWeight: 600,
+    "&:hover": {
+      // backgroundColor: "#004182",
+      color: "#fff"
+    },
+  }}
+>
+  Connect on LinkedIn
+</Button>
+
     </Box>
   </Box>
 </CardContent>

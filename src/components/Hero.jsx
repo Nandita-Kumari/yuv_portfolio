@@ -99,27 +99,36 @@ With expertise spanning product lifecycle management, enterprise level data gove
             Resume
           </Button>
 
-          {/* LinkedIn Button */}
-          <Button
-            variant="outlined"
-            sx={{
-              fontSize: { xs: "0.65rem", sm: "0.8rem", md: "1rem" },
-              padding: { xs: "6px 10px", sm: "8px 18px" },
-              backgroundColor: "rgba(0, 0, 0, 0.3)",
-              color: "#fff",
-              borderColor: "rgba(255,255,255,0.7)",
-              display: "flex",
-              alignItems: "center",
-              gap: 1,
-              "&:hover": {
-                backgroundColor: "rgba(0,0,0,0.5)",
-                borderColor: "#fff",
-              },
-            }}
-          >
-            <ErrorOutlineIcon sx={{ fontSize: { xs: "0.9rem", sm: "1.1rem", md: "1.3rem" } }} />
-            LinkedIn
-          </Button>
+         <Button
+  component="a"
+  href="https://www.linkedin.com/in/youvakshi-thakur-1a9585166?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+  target="_blank"
+  rel="noopener noreferrer"
+  variant="outlined"
+  sx={{
+    fontSize: { xs: "0.65rem", sm: "0.8rem", md: "1rem" },
+    padding: { xs: "6px 10px", sm: "8px 18px" },
+    backgroundColor: "rgba(0, 0, 0, 0.3)",
+    color: "#fff",
+    borderColor: "rgba(255,255,255,0.7)",
+    display: "flex",
+    alignItems: "center",
+    gap: 1,
+    textDecoration: "none",
+    "&:hover": {
+      backgroundColor: "rgba(0,0,0,0.5)",
+      borderColor: "#fff",
+      textDecoration: "none",
+      color: "#fff"
+    },
+  }}
+>
+  <ErrorOutlineIcon
+    sx={{ fontSize: { xs: "0.9rem", sm: "1.1rem", md: "1.3rem" } }}
+  />
+  LinkedIn
+</Button>
+
         </Box>
       </Box>
     </Box>
