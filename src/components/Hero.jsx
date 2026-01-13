@@ -83,21 +83,29 @@ With expertise spanning product lifecycle management, enterprise level data gove
         >
           {/* Resume Button */}
           <Button
-            variant="contained"
-            sx={{
-              fontSize: { xs: "0.65rem", sm: "0.8rem", md: "1rem" },
-              backgroundColor: "#fff",
-              color: "#000",
-              fontWeight: "bold",
-              padding: { xs: "6px 10px", sm: "8px 18px" },
-              display: "flex",
-              alignItems: "center",
-              gap: 1,
-            }}
-          >
-            <PlayArrowIcon sx={{ fontSize: { xs: "0.9rem", sm: "1.1rem", md: "1.3rem" } }} />
-            Resume
-          </Button>
+  variant="contained"
+  component="a"
+  href="/pdfs/resume.pdf"
+  target="_blank"
+  rel="noopener noreferrer"
+  sx={{
+    fontSize: { xs: "0.65rem", sm: "0.8rem", md: "1rem" },
+    backgroundColor: "#fff",
+    color: "#000",
+    fontWeight: "bold",
+    padding: { xs: "6px 10px", sm: "8px 18px" },
+    display: "flex",
+    alignItems: "center",
+    gap: 1,
+    "&:hover": {
+      backgroundColor: "#f2f2f2",
+      color: "#000"
+    },
+  }}
+>
+  <PlayArrowIcon sx={{ fontSize: { xs: "0.9rem", sm: "1.1rem", md: "1.3rem" } }} />
+  Resume
+</Button>
 
          <Button
   component="a"
