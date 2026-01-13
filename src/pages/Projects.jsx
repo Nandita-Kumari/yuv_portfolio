@@ -1,6 +1,6 @@
 import React from "react";
 import Navbar from "../components/Navbar";
-import { Box, Toolbar, Typography } from "@mui/material";
+import { Box, IconButton, Toolbar, Typography } from "@mui/material";
 import Hero from "../components/Hero";
 import { useNavigate } from "react-router-dom";
 import musicImg from "../assets/achievements/AeroIndia_page-0001.jpg";
@@ -37,6 +37,28 @@ import twenty47 from "../assets/floorPlan/twenty47.jpeg";
 import twenty47Img from "../assets/floorPlan/twenty47Img.jpeg";
 import ballImg from "../assets/pitchDecks/ball.png";
 import projectVideo from '../assets/project_video.mp4';
+import multidisciplinaryImg from '../assets/caseStudy/multidisciplinaryImg.jpeg';
+import aiImg from "../assets/caseStudy/aiImg.jpeg";
+import legalImg from "../assets/caseStudy/legalImg.jpeg";
+import displayImg from "../assets/caseStudy/displayImg.jpeg";
+import menImg from "../assets/caseStudy/menImg.jpeg";
+import hiveHelmetImg from "../assets/products/hiveHelmet.jpeg";
+import hiveShoesImg from "../assets/products/hiveShoes.jpeg";
+import nebulaBagImg from "../assets/products/nebulaBag.jpeg";
+import instawingsPackImg from "../assets/packaging/instawings.jpeg";
+import saijalStoriesImg from "../assets/packaging/saijalStories.jpeg";
+import instawingsPackImg2 from "../assets/packaging/instawings2.jpeg";
+import instawingsPackImg3 from "../assets/packaging/instawings3.jpeg";
+import instawingsPackImg4 from "../assets/packaging/instawings4.jpeg";
+import instawingsPackImg5 from "../assets/packaging/instawings5.jpeg";
+import instawingsPackImg6 from "../assets/packaging/instawings6.jpeg";
+import instawingsPackImg7 from "../assets/packaging/instawings7.jpeg";
+import instawingsPackImg8 from "../assets/packaging/instawings8.jpeg";
+import saijalStoriesVid from "../assets/packaging/saijalStories2.mp4";
+import upbringVid from "../assets/packaging/upbring.mp4";
+
+import ArrowBackIosNewIcon from "@mui/icons-material/ArrowBackIosNew";
+import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 /* ===================== DATA ===================== */
 const pitchDecks = [
   { id: 1, pdf: "cricketAcademy.pdf", image: ballImg},
@@ -53,40 +75,53 @@ const caseStudies = [
   { id: 2, url: "/case-study", image: tescoImg, targetId: "tesco" },
   // { id: 3, url: "/case-study", image: zaraImg, targetId: "zara" },
   // { id: 4, url: "/case-study", image: tommyHilfigerImg, targetId: "tommy"},
-  { id: 5, title: "Multidisciplinary analysis of interfaces; supply chain Event  management (SCEM)– RFID control theory", url: "/case-study", targetId: "multidisciplinary" },
+  { id: 5, url: "/case-study", image: multidisciplinaryImg, targetId: "multidisciplinary" },
   { id: 6, url: "/case-study", image: googleImg, targetId: "google" },
-  { id: 7, title: "Artificial intelligence vs Human intelligence", url: "/case-study", targetId: "artificial" },
+  { id: 7, url: "/case-study", image: aiImg, targetId: "artificial" },
   { id: 8, url: "/case-study", image: nikeImg, targetId: "nike" },
   // { id: 9, url: "/case-study", image: raymondImg, targetId: "raymond" },
-  { id: 10, title: "Legal policies and best practices", url: "/case-study", targetId: "legal" }, 
-  { id: 11, title: "Display dissapointment", url: "/case-study", targetId: "display" },
-  { id: 12, title: "Men buy women shop", url: "/case-study", targetId: "men" },
+  { id: 10, url: "/case-study", image: legalImg, targetId: "legal" }, 
+  { id: 11, url: "/case-study", image: displayImg, targetId: "display" },
+  { id: 12, url: "/case-study", image: menImg, targetId: "men" },
   { id: 13, url: "/case-study", image: lorealImg, targetId: "loreal" },    
-  { id: 14, title: "Choice Accessories", url: "/case-study", targetId: "choice" },  
-  { id: 15, title: "Mobilink", url: "/case-study", targetId: "mobilink" },  
-  { id: 16, url: "/case-study", image: lVImg, targetId: "lv" },
+  { id: 15, url: "/case-study", image: lVImg, targetId: "lv" },
  
   
 ];
 
 const achievements = [
-  { id: 1, url: "/achievements/best-marketer", image: musicImg, },
-  { id: 2, url: "/achievements/user-growth", image: jdDesignAwardImage },
+  { id: 1, image: musicImg, },
+  { id: 2, image: jdDesignAwardImage },
   
 ];
 
 const products = [
-  { id: 1, title: "Hive guard helment", url: "/achievements/best-marketer" },
-  { id: 2, title: "Nebula Saddle bag", url: "/achievements/user-growth" },
-  { id: 3, title: "Hive tech shoes", url: "/achievements/best-marketer" },
+  { id: 1, title: "Hive guard helment", image: hiveHelmetImg, url: "/achievements/best-marketer" },
+  { id: 2, title: "Nebula Saddle bag", image: nebulaBagImg, url: "/achievements/user-growth" },
+  { id: 3, title: "Hive tech shoes", image: hiveShoesImg, url: "/achievements/best-marketer" },
   
 ];
 
 const packaging = [
   
-  { id: 1, title: "Instawings", url: "/achievements/best-marketer" },
-  { id: 2, title: "Saijal stories", url: "/achievements/user-growth" },
-  { id: 3, title: "Upbring", url: "/achievements/user-growth" },
+  { id: 1, media: [
+      { type: "image", src: instawingsPackImg },
+      { type: "image", src: instawingsPackImg2 },
+      { type: "image", src: instawingsPackImg3 },
+      { type: "image", src: instawingsPackImg4 },
+      { type: "image", src: instawingsPackImg5 },
+      { type: "image", src: instawingsPackImg6 },
+      { type: "image", src: instawingsPackImg7 },
+      { type: "image", src: instawingsPackImg8 },
+    ],},
+  { id: 2, media: [      
+      { type: "image", src: saijalStoriesImg },
+      { type: "video", src: saijalStoriesVid },
+    ], },
+  { id: 3, media: [
+      { type: "video", src: upbringVid },
+      
+    ],},
 ];
 
 const logos = [
@@ -123,8 +158,143 @@ const floorPlans = [
 
 /* ===================== SECTION COMPONENT ===================== */
 
+
+
+const SlidingCard = ({ item, onClick }) => {
+  const [index, setIndex] = React.useState(0);
+  const media = item.media || [];
+
+  const current = media[index];
+  const isVideo = current?.type === "video";
+
+  // Auto-slide ONLY for images
+  React.useEffect(() => {
+    if (!media.length || isVideo) return;
+
+    const interval = setInterval(() => {
+      setIndex((prev) => (prev + 1) % media.length);
+    }, 3000);
+
+    return () => clearInterval(interval);
+  }, [index, isVideo, media.length]);
+
+  const next = (e) => {
+    e.stopPropagation();
+    setIndex((prev) => (prev + 1) % media.length);
+  };
+
+  const prev = (e) => {
+    e.stopPropagation();
+    setIndex((prev) => (prev - 1 + media.length) % media.length);
+  };
+
+  return (
+    <Box
+      onClick={onClick}
+      sx={{
+        minWidth: "260px",
+        height: "160px",
+        borderRadius: "14px",
+        position: "relative",
+        overflow: "hidden",
+        cursor: "pointer",
+        backgroundColor: "#000",
+        border: "1px solid #222",
+      }}
+    >
+      {/* MEDIA */}
+      {isVideo ? (
+        <video
+          src={current.src}
+          autoPlay
+          muted
+          loop={true}
+          playsInline
+          style={{
+            width: "100%",
+            height: "100%",
+            objectFit: "contain",
+          }}
+        />
+      ) : (
+        <Box
+          sx={{
+            width: "100%",
+            height: "100%",
+            backgroundImage: `url(${current?.src})`,
+            backgroundSize: "contain",
+            backgroundRepeat: "no-repeat",
+            backgroundPosition: "center",
+          }}
+        />
+      )}
+
+      {/* LEFT ARROW */}
+      <IconButton
+        onClick={prev}
+        sx={{
+          position: "absolute",
+          top: "50%",
+          left: 6,
+          transform: "translateY(-50%)",
+          color: "#fff",
+          backgroundColor: "rgba(0,0,0,0.4)",
+          "&:hover": { backgroundColor: "rgba(0,0,0,0.7)" },
+        }}
+      >
+        <ArrowBackIosNewIcon fontSize="small" />
+      </IconButton>
+
+      {/* RIGHT ARROW */}
+      <IconButton
+        onClick={next}
+        sx={{
+          position: "absolute",
+          top: "50%",
+          right: 6,
+          transform: "translateY(-50%)",
+          color: "#fff",
+          backgroundColor: "rgba(0,0,0,0.4)",
+          "&:hover": { backgroundColor: "rgba(0,0,0,0.7)" },
+        }}
+      >
+        <ArrowForwardIosIcon fontSize="small" />
+      </IconButton>
+
+      {/* Overlay */}
+      <Box
+        sx={{
+          position: "absolute",
+          inset: 0,
+          background:
+            "linear-gradient(to top, rgba(0,0,0,0.85), rgba(0,0,0,0.3))",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          pointerEvents: "none",
+        }}
+      >
+        <Typography
+          sx={{
+            fontWeight: 800,
+            fontSize: "0.75rem",
+            letterSpacing: "1px",
+            textAlign: "center",
+          }}
+        >
+          {item.title}
+        </Typography>
+      </Box>
+    </Box>
+  );
+};
+
+  
 const Section = ({ title, items }) => {
   const navigate = useNavigate();
+  const isPackaging = title === "Packaging";
+
+
 
   const handleClick = (item) => {
   if (item.pdf) {
@@ -179,80 +349,70 @@ const Section = ({ title, items }) => {
           "&::-webkit-scrollbar": { display: "none" },
         }}
       >
-        {items.map((item) => (
-          <Box
-            key={item.id}
-            onClick={() => handleClick(item)}
-            sx={{
-              minWidth: "260px",
-              height: "160px",
-              borderRadius: "14px",
-              position: "relative",
-              cursor: "pointer",
-              overflow: "hidden",
-              scrollSnapAlign: "start",
+        {items.map((item) =>
+  isPackaging && item.media ? (
+    <SlidingCard
+      key={item.id}
+      item={item}
+      onClick={() => handleClick(item)}
+    />
+  ) : (
+    <Box
+      key={item.id}
+      onClick={() => handleClick(item)}
+      sx={{
+        minWidth: "260px",
+        height: "160px",
+        borderRadius: "14px",
+        position: "relative",
+        cursor: "pointer",
+        overflow: "hidden",
+        scrollSnapAlign: "start",
 
-              backgroundImage: item.image ? `url(${item.image})` : "none",
-              backgroundSize: "contain",
-backgroundRepeat: "no-repeat",
-backgroundPosition: "center",
+        backgroundImage: item.image ? `url(${item.image})` : "none",
+        backgroundSize: "contain",
+        backgroundRepeat: "no-repeat",
+        backgroundPosition: "center",
 
-              backgroundColor: item.image ? "transparent" : "#191818",
+        backgroundColor: item.image ? "transparent" : "#191818",
+        border: "1px solid #222",
+        transition: "0.35s ease",
+        "&:hover": {
+          transform: "translateY(-8px)",
+          boxShadow: "0 6px 25px rgba(228,25,25,0.7)",
+        },
+      }}
+    >
+      {/* Title Overlay */}
+      <Box
+        sx={{
+          position: "absolute",
+          inset: 0,
+          background:
+            "linear-gradient(to top, rgba(0,0,0,0.85), rgba(0,0,0,0.25))",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          padding: 2,
+        }}
+      >
+        <Typography
+          sx={{
+            fontWeight: 800,
+            fontSize: "0.75rem",
+            textAlign: "center",
+            letterSpacing: "1px",
+            textTransform: "uppercase",
+          }}
+        >
+          {item.title}
+        </Typography>
+      </Box>
+    </Box>
+  )
+)}
 
-              border: "1px solid #222",
-              transition: "0.35s ease",
-              "&:hover": {
-                transform: "translateY(-8px)",
-                boxShadow: "0 6px 25px rgba(228,25,25,0.7)",
-              },
-            }}
-          >
-            {/* PDF badge */}
-            {item.pdf && (
-              <Box
-                sx={{
-                  position: "absolute",
-                  top: 10,
-                  right: 10,
-                  backgroundColor: "#db0000",
-                  fontSize: "0.6rem",
-                  fontWeight: 700,
-                  px: 1,
-                  py: "2px",
-                  borderRadius: "6px",
-                  zIndex: 2,
-                }}
-              >
-                PDF
-              </Box>
-            )}
 
-            {/* Overlay */}
-            <Box
-              sx={{
-                position: "absolute",
-                inset: 0,
-                background:
-                  "linear-gradient(to top, rgba(0,0,0,0.8), rgba(0,0,0,0.3))",
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
-                padding: 2,
-              }}
-            >
-              <Typography
-                sx={{
-                  fontWeight: 800,
-                  fontSize: "0.75rem",
-                  textAlign: "center",
-                  letterSpacing: "1px",
-                }}
-              >
-                {item.title}
-              </Typography>
-            </Box>
-          </Box>
-        ))}
       </Box>
     </Box>
   );

@@ -20,19 +20,27 @@ import barbieBratzImg from "../assets/projects/barbieBratz.jpg";
 import bvlGariImg from "../assets/projects/bvlGari.jpg";
 import maxImg from "../assets/projects/max.jpeg";
 import { useNavigate } from "react-router-dom";
+import corporateImg from "../assets/projects/corporate.jpeg";
+import materialsVMImg from "../assets/projects/materialsVM.jpeg";
+import paytmImg from "../assets/projects/paytm.jpeg";
+import yearsImg from "../assets/projects/years.jpeg";
+import globalization from "../assets/projects/globalization.jpeg";
+import musicImg from "../assets/projects/music.jpeg";
+import havenHelmsImg from "../assets/projects/havenHelms.jpeg";
+import vMImg from "../assets/projects/vM.jpeg";
 
 const images = [
-  { img: img1, title: "India’s Premier Music Festival", pdf: "Pitch-Deck-Instawings.pdf" },
+  { img: musicImg, title: "India’s Premier Music Festival", pdf: "Pitch-Deck-Instawings.pdf" },
   { img: smartWaterImg, title: "Smart Water", pdf: "smartWater.pdf" },
-  { img: img3, title: "Corporate Communication", pdf: "corporateCommunication.pdf" },
-  { img: img4, title: "Materials used in VM", pdf: "materialsVM.pdf" },
-  { img: img4, title: "Visual Merchandizing", pdf: "visualMerchandizing.pdf" },
-  { img: img4, title: "Haven And Helms" },
-  { img: img5, title: "Paytm business Model" },
+  { img: corporateImg, title: "Corporate Communication", pdf: "corporateCommunication.pdf" },
+  { img: materialsVMImg, title: "Materials used in VM", pdf: "materialsVM.pdf" },
+  { img: vMImg, title: "Visual Merchandizing", pdf: "visualMerchandizing.pdf" },
+  { img: havenHelmsImg, title: "Haven And Helms" },
+  { img: paytmImg, title: "Paytm business Model" },
   { img: img6, title: "Royal Enfield Phillips" },
-  { img: img7, title: "50 years of fashion transformation" },
-  { img: img8, title: "Her Grace wedding planners" },
-  { img: img10, title: "Globalisation and corporate culture" },
+  { img: yearsImg, title: "50 years of fashion transformation" },
+ 
+  { img: globalization, title: "Globalisation and corporate culture" },
   { img: barbieBratzImg, title: "Barbie vs Bratz", pdf: "barbieBratz.pdf" }, 
   { img: bvlGariImg, title: "BVLGARI" },
   { img: maxImg, title: "Max", pdf: "Max.pdf" },
@@ -100,7 +108,7 @@ const handleClick = (item) => {
           Projects
         </Typography>
 
-        <Typography variant="p" sx={{ opacity: 0.85, mt: 6 }}>
+        <Typography variant="p" sx={{ opacity: 0.85, mt: 8 }}>
           Years of quiet persistence
           <br />
           My foundational marketing adventures.
@@ -112,7 +120,7 @@ const handleClick = (item) => {
       
         sx={{
           position: "relative",
-          mt: 7,
+          // mt: 1,
           height: 520,
           display: "flex",
           justifyContent: "center",
@@ -153,7 +161,7 @@ const handleClick = (item) => {
         alt={item.title}
         style={{
           width: index === activeIndex ? 300 : 280,
-          height: index === activeIndex ? 420 : 380,
+          height: index === activeIndex ? 400 : 380,
           objectFit: "contain",
           borderRadius: 6,
         }}

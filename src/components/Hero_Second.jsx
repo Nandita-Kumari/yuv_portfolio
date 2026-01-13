@@ -5,13 +5,17 @@ import CaseStudy2 from "../assets/cards/CaseStudy2.jpg";
 import blog from "../assets/BLOG.png";
 import brandStrategy from "../assets/BrandStrategy.png";
 import socialMediaMarketing from "../assets/DigitalMarketing.png";
+import skillsImg from "../assets/skills.jpeg";
+import achievementsImg from "../assets/achievements.jpeg";
+import projectsImg from "../assets/projects.jpeg";
+import newsletterImg from "../assets/newsletter.jpeg";
 
 export default function Hero_Second() {
 
     const cards = [
-  { id: 1, title: "Skills", image: card1, link: "/skills" },
+  { id: 1, title: "Skills", image: skillsImg, link: "/skills" },
   { id: 2, title: "Experience", image: Experience, link: "/professional" },
-  { id: 3, title: "Projects", image: card1, link: "/projects" },
+  { id: 3, title: "Projects", image: projectsImg, link: "/projects" },
   // { id: 3, title: "Certifications", image: card1, link: "/certifications" },
   // { id: 4, title: "Recommendations", image: card1, link: "/recommendations" },
   
@@ -26,8 +30,8 @@ const cards2 = [
 const cards3 = [
   { id: 1, title: "Blogs", image: blog, link: "/blogs" },
   { id: 2, title: "Case Study", image: CaseStudy2, link: "/case-study" },
-  { id: 3, title: "News Letters", image: card1, link: "/newsletters" },
-  { id: 3, title: "Achievements", image: card1, link: "/achievements" },
+  { id: 3, title: "News Letters", image: newsletterImg, link: "/newsletters" },
+  { id: 3, title: "Achievements", image: achievementsImg, link: "/achievements" },
 ];
 
     return(
