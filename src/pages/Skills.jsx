@@ -29,6 +29,14 @@ import TimelineIcon from "@mui/icons-material/Timeline";
 import PublicIcon from "@mui/icons-material/Public";
 import AnalyticsIcon from "@mui/icons-material/Analytics";
 import BoltIcon from "@mui/icons-material/Bolt";
+import AutoGraphIcon from "@mui/icons-material/AutoGraph";
+import MonetizationOnIcon from "@mui/icons-material/MonetizationOn";
+import DeviceHubIcon from "@mui/icons-material/DeviceHub";
+import ScienceIcon from "@mui/icons-material/Science";
+import Diversity3Icon from "@mui/icons-material/Diversity3";
+import CalendarMonthIcon from "@mui/icons-material/CalendarMonth";
+import ExploreIcon from "@mui/icons-material/Explore";
+
 
 
 
@@ -126,23 +134,51 @@ export default function Skills() {
     },
 
     {
-      heading: "Data Analytics",
+      heading: "Social Media Management",
       items: [
         {
-          icon: <DashboardCustomizeIcon sx={{ fontSize: 50, color: "#db0000" }} />,
+          icon: <AutoGraphIcon sx={{ fontSize: 50, color: "#db0000" }} />,
           // title: "Frontend Development",
-          desc: "Built custom dashboards tracking KPIs like CAC and LTV.",
+          desc: "Built and optimized social media accounts from scratch, achieving top platform visibility and 5x organic reach growth.",
         },
         {
-          icon: <GroupIcon sx={{ fontSize: 50, color: "#db0000" }} />,
+          icon: <MonetizationOnIcon sx={{ fontSize: 50, color: "#db0000" }} />,
           // title: "Backend Development",
-          desc: "Performed cohort analysis for customer retention insights.",
+          desc: "Managed paid social campaigns delivering 4x ROI on ad spend across Instagram, Facebook, and LinkedIn.",
         },
         {
-          icon: <ShowChartIcon sx={{ fontSize: 50, color: "#db0000" }} />,
+          icon: <DeviceHubIcon sx={{ fontSize: 50, color: "#db0000" }} />,
           // title: "Backend Development",
-          desc: "Forecasted trends using regression models and attribution.",
+          desc: "Executed multi platform content funnels integrating stories, reels, posts, and collaborations for seamless engagement.",
         },
+         {
+          icon: <ScienceIcon sx={{ fontSize: 50, color: "#db0000" }} />,
+          // title: "Frontend Development",
+          desc: "A/B tested content strategies and creatives to boost audience interaction rates by 30%+.",
+        },
+        
+      ],
+    },
+
+    {
+      heading: "Community and Influencer Management",
+      items: [
+        {
+          icon: <Diversity3Icon sx={{ fontSize: 50, color: "#db0000" }} />,
+          // title: "Frontend Development",
+          desc: "Cultivated brand communities and messaging frameworks that fostered loyalty and user-generated content.",
+        },
+        {
+          icon: <CalendarMonthIcon sx={{ fontSize: 50, color: "#db0000" }} />,
+          // title: "Backend Development",
+          desc: "Designed content calendars, visual themes, and response guidelines for consistent brand voice.",
+        },
+        {
+          icon: <ExploreIcon sx={{ fontSize: 50, color: "#db0000" }} />,
+          // title: "Backend Development",
+          desc: "Led social media re-energization initiatives, expanding follower base and market presence.",
+        },
+        
       ],
     },
 
