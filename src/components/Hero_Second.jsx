@@ -18,19 +18,19 @@ export default function Hero_Second() {
   const cards = [
     { id: 1, title: "Skills", image: skillsImg, link: "/skills" },
     { id: 2, title: "Experience", image: Experience, link: "/professional" },
-    { id: 3, title: "Projects", image: projectsImg, link: "/projects" },
+    { id: 3, title: "Projects", image: projectsImg, link: "/projectPage" },
   ];
 
   const cards2 = [
-    { id: 1, title: "Brand Strategy", image: brandStrategy, link: "/projects" },
-    { id: 2, title: "Social Media Marketing", image: socialMediaMarketing, link: "/projects" },
+    { id: 1, title: "Brand Strategy", image: brandStrategy, link: "/skills" },
+    { id: 2, title: "Social Media Marketing", image: socialMediaMarketing, link: "/skills" },
   ];
 
   const cards3 = [
-    { id: 1, title: "Blogs", image: blog, link: "/blogs" },
+    { id: 1, title: "Blogs", image: blog, link: "/projects" },
     { id: 2, title: "Case Study", image: CaseStudy2, link: "/case-study" },
-    { id: 3, title: "News Letters", image: newsletterImg, link: "/newsletters" },
-    { id: 4, title: "Achievements", image: achievementsImg, link: "/achievements" },
+    { id: 3, title: "News Letters", image: newsletterImg, link: "/projects" },
+    { id: 4, title: "Achievements", image: achievementsImg, link: "/projects" },
     
   ];
 
