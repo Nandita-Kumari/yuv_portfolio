@@ -198,7 +198,7 @@ export default function Skills() {
         {
           icon: <MenuBookIcon sx={{ fontSize: 50, color: "#db0000" }} />,
           // title: "Backend Development",
-          desc: "Created infographics and ebooks driving 40% lead growth.",
+          desc: "Created infographics for social media content.",
         },
         {
           icon: <BrushIcon sx={{ fontSize: 50, color: "#db0000" }} />,
