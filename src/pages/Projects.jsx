@@ -59,6 +59,16 @@ import upbringVid from "../assets/packaging/upbring.mp4";
 
 import ArrowBackIosNewIcon from "@mui/icons-material/ArrowBackIosNew";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
+import hiveHelmetImg2 from "../assets/products/hiveHelmetImg2.jpeg";
+import hiveHelmetImg3 from "../assets/products/hiveHelmetImg3.jpeg";
+import hiveHelmetImg4 from "../assets/products/hiveHelmetImg4.jpeg";
+import hiveHelmetImg5 from "../assets/products/hiveHelmetImg5.jpeg";
+import hiveShoesImg2 from "../assets/products/hiveShoesImg2.jpeg";
+import hiveShoesImg3 from "../assets/products/hiveShoesImg3.jpeg";
+import hiveShoesImg4 from "../assets/products/hiveShoesImg4.jpeg";
+import hiveShoesImg5 from "../assets/products/hiveShoesImg5.jpeg";
+import hiveShoesImg6 from "../assets/products/hiveShoesImg6.jpeg";
+import hiveShoesImg7 from "../assets/products/hiveShoesImg7.jpeg";
 /* ===================== DATA ===================== */
 const pitchDecks = [
   { id: 1, pdf: "cricketAcademy.pdf", image: ballImg},
@@ -96,9 +106,25 @@ const achievements = [
 ];
 
 const products = [
-  { id: 1, title: "Hive guard helment", image: hiveHelmetImg, url: "/achievements/best-marketer" },
-  { id: 2, title: "Nebula Saddle bag", image: nebulaBagImg, url: "/achievements/user-growth" },
-  { id: 3, title: "Hive tech shoes", image: hiveShoesImg, url: "/achievements/best-marketer" },
+  { id: 1, title: "Hive guard helmet", media: [
+    {type: "image", src: hiveHelmetImg},
+    {type: "image", src: hiveHelmetImg2},
+    {type: "image", src: hiveHelmetImg3},
+    {type: "image", src: hiveHelmetImg4},
+    {type: "image", src: hiveHelmetImg5}
+  ]},
+  // { id: 1, title: "Hive guard helment", image: hiveHelmetImg },
+  { id: 2, title: "Nebula Saddle bag", image: nebulaBagImg},
+
+  { id: 3, title: "Hive tech shoes", media: [
+    {type: "image", src: hiveShoesImg},
+    {type: "image", src: hiveShoesImg2},
+    {type: "image", src: hiveShoesImg3},
+    {type: "image", src: hiveShoesImg4},
+    {type: "image", src: hiveShoesImg5},
+    {type: "image", src: hiveShoesImg6},
+    {type: "image", src: hiveShoesImg7},
+  ] },
   
 ];
 
@@ -125,17 +151,40 @@ const packaging = [
 ];
 
 const logos = [
-  
-  { id: 1, url: "/achievements/best-marketer",image: brandColorpaypilotLogo},
-  { id: 2, url: "/achievements/best-marketer",image: officialPaypilotLogoImg},
-  { id: 3, url: "/achievements/best-marketer",image: officialDPaypilotLogoImg},
-  { id: 4, url: "/achievements/best-marketer",image: symbolPaypilotLogoImg},
-  { id: 5, url: "/achievements/user-growth", image: allInOneHospitalityImg },
-  { id: 6, url: "/achievements/user-growth", image: theTapioCafeImg },
-  { id: 7, url: "/achievements/user-growth", image: thePaniEqnImg },
-  { id: 8, url: "/achievements/user-growth", image: cashValueImg },
-  { id: 9, url: "/case-study", image: ttplImg },
-  { id: 10, url: "/case-study", image: mythicMuscleImg },
+  { id: 1, media: [
+    {type: "image", src: brandColorpaypilotLogo},
+    {type: "image", src: officialPaypilotLogoImg},
+    {type: "image", src: officialDPaypilotLogoImg},
+    {type: "image", src: symbolPaypilotLogoImg}
+  ]},
+  // { id: 1, image: brandColorpaypilotLogo},
+  // { id: 2, image: officialPaypilotLogoImg},
+  // { id: 3, image: officialDPaypilotLogoImg},
+  // { id: 4, image: symbolPaypilotLogoImg},
+  { id: 2, media: [
+    {type: "image", src: allInOneHospitalityImg}
+  ]},
+  // { id: 5,  image: allInOneHospitalityImg },
+  { id: 3, media: [
+    {type: "image", src: theTapioCafeImg}
+  ]},
+  // { id: 6,  image: theTapioCafeImg },
+  { id: 4, media: [
+    {type: "image", src: thePaniEqnImg}
+  ]},
+  // { id: 7,  image: thePaniEqnImg },
+  { id: 5, media: [
+    {type: "image", src: cashValueImg}
+  ]},
+  // { id: 8,  image: cashValueImg },
+  { id: 6, media: [
+    {type: "image", src: ttplImg}
+  ]},
+  // { id: 9,  image: ttplImg },
+  { id: 7, media: [
+    {type: "image", src: mythicMuscleImg}
+  ]},
+  // { id: 10,  image: mythicMuscleImg },
 ];
 
 const proposals = [
@@ -292,7 +341,7 @@ const SlidingCard = ({ item, onClick }) => {
   
 const Section = ({ title, items }) => {
   const navigate = useNavigate();
-  const isPackaging = title === "Packaging";
+  const isPackaging = title === "Packaging" || "Logos" || "Products";
 
 
 

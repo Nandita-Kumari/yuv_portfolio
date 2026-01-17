@@ -5,6 +5,7 @@ import { Box, Typography, Grid, Toolbar } from "@mui/material";
 import upwork from "../assets/upwork_icon.png";
 import zara from "../assets/ZARA.jpg";
 import paypilot from "../assets/paypilot-icon.png"
+import allInOneHospitality from "../assets/logos/allInOneHospitality.jpg"
 import instawings from "../assets/instawings-icon.png"
 
 export default function Professional() {
@@ -17,7 +18,29 @@ export default function Professional() {
         {
           title: "Role",
           front: "Marketing Manager",
-          back: "Handled brand strategy, growth marketing, and campaign execution.",
+          back: "As Marketing Manager at Paypilot Solutions Private Limited, I lead end to end marketing strategies in the competitive payment gateway and services industry. From social media management to high impact lead generation, I’ve excelled in acquiring and onboarding premium clients through innovative campaigns. Most notably, I founded and spearheaded the launch of the Paypilot Growth Suite a transformative revenue stream introducing six  services fueling significant business diversification, scalable growth, and strengthened client partnerships.",
+        },
+        {
+          title: "Duration",
+          front: "June 2025 – Present",
+          back: "Leading marketing initiatives across multiple verticals.",
+        },
+        {
+          title: "Skills",
+          front: "SEO, Strategy",
+          back: "SEO, Campaign Management, Analytics, Branding.",
+        },
+      ],
+    },
+    {
+      company: "All In One Hospitality (Mother Company)",
+      logo: allInOneHospitality,
+      website: "https://www.allinonehospitality.in",
+      cards: [
+        {
+          title: "Role",
+          front: "Marketing Manager",
+          back: "At All in One Hospitality, I oversee social media strategies across all platforms for the parent company and its key brands Paypilot, Bharat Mart, and Rider Adda. I maintain consistent brand guidelines while driving exceptional engagement and visibility. Highlights include cultivating a powerful LinkedIn presence that amplifies brand authority, fosters community growth, and supports cross platform synergy for sustained audience expansion.",
         },
         {
           title: "Duration",
@@ -38,13 +61,13 @@ export default function Professional() {
       cards: [
         {
           title: "Role",
-          front: "UI Consultant",
-          back: "Worked closely with designers to align UI with brand identity.",
+          front: "Freelance Project Manager & Growth Consultant",
+          back: "Managed diverse contract based projects on Upwork, specializing in project management, crafting compelling investor pitches, and guiding companies through scaling initiatives. Delivered end-to-end support for startups and businesses, from strategy formulation and pitch deck creation to execution roadmaps that accelerated growth. Excelled in time-bound contracts, ensuring seamless operations, stakeholder alignment, and measurable outcomes like successful funding rounds and operational expansions.",
         },
         {
           title: "Duration",
-          front: "2024 – 2025",
-          back: "1+ year of hands-on experience in UI strategy.",
+          front: "2020 – 2023",
+          back: "Delivered end-to-end support for startups and businesses",
         },
         {
           title: "Impact",
@@ -60,12 +83,12 @@ export default function Professional() {
       cards: [
         {
           title: "Role",
-          front: "Brand Designer",
-          back: "Designed visuals for seasonal campaigns and product launches.",
+          front: "Social Media Specialist",
+          back: "Transformed Instawings from zero social media presence by building all accounts from scratch across key platforms. Drove rapid growth in followers, customer acquisition, and collaborations including international partners from the US. Handled comprehensive branding for marquee clients such as Air India, Air Asia, Vistara, UltraTech, PVR, Prestige, Birkenstock, The Body Shop, Punjabi Grill, Smoor, Aubrey, and The Leela Palace Hotels, delivering cohesive strategies that elevated brand visibility and engagement.",
         },
         {
           title: "Duration",
-          front: "2023 – 2024",
+          front: "2024",
           back: "Worked with cross-functional marketing teams.",
         },
         {
@@ -82,12 +105,12 @@ export default function Professional() {
       cards: [
         {
           title: "Role",
-          front: "Marketing Consultant",
-          back: "Helped startups establish strong digital presence.",
+          front: "Winter Intern (Visual Merchandising & Floor Operations)",
+          back: "Gained hands on expertise in premium retail operations at Zara, managing visual merchandising to create captivating store displays that boosted product appeal and sales. Oversaw stock management, cash counter operations, and floor representation, while delivering exceptional customer service to drive satisfaction and loyalty. Excelled in fast-paced environments, honing skills in inventory control, customer engagement, and team coordination during peak winter campaigns.",
         },
         {
           title: "Duration",
-          front: "2022 – Present",
+          front: "2019",
           back: "Worked with multiple brands and industries.",
         },
         {
@@ -256,7 +279,7 @@ export default function Professional() {
                         >
                           {card.title}
                         </Typography>
-                        <Typography variant="body1" sx={{ opacity: 0.9 }}>
+                        <Typography variant="body1" sx={{textAlign: 'center', opacity: 0.9, fontSize: "15px" }}>
                           {card.front}
                         </Typography>
                       </Box>
@@ -276,13 +299,14 @@ export default function Professional() {
                           justifyContent: "center",
                           alignItems: "center",
                           padding: 3,
+                         
                           boxShadow:
                             "0 6px 25px rgba(247, 33, 33, 0.85)",
                         }}
                       >
                         <Typography
                           variant="body2"
-                          sx={{ textAlign: "center", opacity: 0.9 }}
+                          sx={{ textAlign: "center", opacity: 0.9, fontSize:  '12px' }}
                         >
                           {card.back}
                         </Typography>
