@@ -26,7 +26,7 @@ export default function Contact() {
                     backgroundColor: "#000",
                     minHeight: "100vh",
                     color: "#fff",
-                    pb: 10,
+                    // pb: 10,
                 }}
                 >
                     <Navbar />
@@ -36,12 +36,12 @@ export default function Contact() {
 
                  <Box
                     sx={{
-                        minHeight: "70vh",
+                        minHeight: "55vh",
                         backgroundColor: "#000",
                         display: "flex",
                         justifyContent: "center",
                         alignItems: "center",
-                        px: 2,
+                        // px: 2,
                     }}
                 >
                     <Card
