@@ -140,7 +140,7 @@ export default function Contact() {
                     mb: 3,
                     }}
                 >
-                    I'm always up for a chat or a coffee! Feel free to reach out.
+                    I'm always up for a chat or a matcha! Feel free to reach out.
                 </Typography>
 
                 {/* Email */}
