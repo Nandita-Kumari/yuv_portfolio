@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Navbar from "../components/Navbar";
-import { Box, Typography, IconButton } from "@mui/material";
+import { Box, Typography, IconButton, Toolbar } from "@mui/material";
 import bgImage from "../assets/projectBG.png";
 import ArrowBackIosNewIcon from "@mui/icons-material/ArrowBackIosNew";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
@@ -27,19 +27,20 @@ import yearsImg from "../assets/projects/years.jpeg";
 import globalization from "../assets/projects/globalization.jpeg";
 import musicImg from "../assets/projects/music.jpeg";
 import havenHelmsImg from "../assets/projects/havenHelms.jpeg";
-import vMImg from "../assets/projects/vM.jpeg";
+import Hero from "../components/Hero";
+import projectVideo from '../assets/home_intro.mp4';
+// import vMImg from "../assets/projects/vM.jpeg";
 
 const images = [
   { img: musicImg, title: "India’s Premier Music Festival", pdf: "Pitch-Deck-Instawings.pdf" },
   { img: smartWaterImg, title: "Smart Water", pdf: "smartWater.pdf" },
   { img: corporateImg, title: "Corporate Communication", pdf: "corporateCommunication.pdf" },
   { img: materialsVMImg, title: "Materials used in VM", pdf: "materialsVM.pdf" },
-  { img: vMImg, title: "Visual Merchandizing", pdf: "visualMerchandizing.pdf" },
+  // { img: vMImg, title: "Visual Merchandizing", pdf: "visualMerchandizing.pdf" },
   { img: havenHelmsImg, title: "Haven And Helms" },
   { img: paytmImg, title: "Paytm business Model" },
   { img: img6, title: "Royal Enfield Phillips" },
-  { img: yearsImg, title: "50 years of fashion transformation" },
- 
+  { img: yearsImg, title: "50 years of fashion transformation" }, 
   { img: globalization, title: "Globalisation and corporate culture" },
   { img: barbieBratzImg, title: "Barbie vs Bratz", pdf: "barbieBratz.pdf" }, 
   { img: bvlGariImg, title: "BVLGARI" },
@@ -82,9 +83,21 @@ const handleClick = (item) => {
 
   return (
     <Box
+          sx={{
+            backgroundColor: "#000",
+            minHeight: "100vh",
+            color: "#fff",
+            // pb: 10,
+          }}
+        >
+
+          <Navbar />
+      <Toolbar />
+      <Hero videoSrc={projectVideo}/>
+    <Box
       sx={{
-        minHeight: "100vh",
-        color: "#fff",
+        // minHeight: "100vh",
+        // color: "#fff",
         backgroundImage: `url(${bgImage})`,
         backgroundSize: "cover",
         backgroundPosition: "center",
@@ -93,10 +106,11 @@ const handleClick = (item) => {
         flexDirection: "column",
       }}
     >
-      <Navbar />
+      {/* <Navbar /> */}
+      
 
       {/* -------- HERO TEXT -------- */}
-      <Box sx={{ textAlign: "center", mt: 14 }}>
+      <Box sx={{ textAlign: "center", mt: 8 }}>
         <Typography
           variant="h2"
           sx={{
@@ -105,10 +119,10 @@ const handleClick = (item) => {
             letterSpacing: "1px",
           }}
         >
-          Projects
+          PROJECTS
         </Typography>
 
-        <Typography variant="p" sx={{ opacity: 0.85, mt: 8 }}>
+        <Typography variant="p" sx={{ opacity: 0.85}}>
           Years of quiet persistence
           <br />
           My foundational marketing adventures.
@@ -231,6 +245,7 @@ const handleClick = (item) => {
 </IconButton>
 
       </Box>
+    </Box>
     </Box>
   );
 }
