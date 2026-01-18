@@ -1522,12 +1522,12 @@ reputed.</p>
       </>
     )
   },
-  {
-    id: "legal",
-    title: "Legal policies and best practices",
-    content:
-      "Designed content systems, posting calendars, and brand voice guides that aligned marketing goals with audience behavior.",
-  },
+  // {
+  //   id: "legal",
+  //   title: "Legal policies and best practices",
+  //   content:
+  //     "Designed content systems, posting calendars, and brand voice guides that aligned marketing goals with audience behavior.",
+  // },
 //   {
 //     id: "visual",
 //     title:

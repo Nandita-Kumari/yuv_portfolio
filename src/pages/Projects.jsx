@@ -69,13 +69,16 @@ import hiveShoesImg4 from "../assets/products/hiveShoesImg4.jpeg";
 import hiveShoesImg5 from "../assets/products/hiveShoesImg5.jpeg";
 import hiveShoesImg6 from "../assets/products/hiveShoesImg6.jpeg";
 import hiveShoesImg7 from "../assets/products/hiveShoesImg7.jpeg";
+import zaraImg from "../assets/caseStudy/zara_logo.png";
+import raymondImg from "../assets/caseStudy/raymond_logo.png";
+import tommyHilfigerImg from "../assets/caseStudy/tommyHilfiger.png";
 /* ===================== DATA ===================== */
 const pitchDecks = [
   { id: 1, pdf: "cricketAcademy.pdf", image: ballImg},
   { id: 2, pdf: "Pitch-Deck-Instawings.pdf",  image: instawingsImg, },
   { id: 3, pdf: "/Pitch-Deck-Paypilot.pdf", image: paypilotLogoImg },
   { id: 4, pdf: "/Pitch-Deck-ArkaNetwork.pdf", image: arkaNetworksImg },
-  { id: 5, pdf: "/case-study", image: systechImg, },
+  { id: 5, pdf: "/systech.pdf", image: systechImg, },
   { id: 6, pdf: "lVPitchDeck.pdf", image: lVImg, },
   
 ];
@@ -83,14 +86,14 @@ const pitchDecks = [
 const caseStudies = [
   { id: 1, url: "/case-study", image: ikeaImg, targetId: "ikea" },
   { id: 2, url: "/case-study", image: tescoImg, targetId: "tesco" },
-  // { id: 3, url: "/case-study", image: zaraImg, targetId: "zara" },
-  // { id: 4, url: "/case-study", image: tommyHilfigerImg, targetId: "tommy"},
+  { id: 3, url: "/case-study", image: zaraImg, targetId: "zara" },
+  { id: 4, url: "/case-study", image: tommyHilfigerImg, targetId: "tommy"},
   { id: 5, url: "/case-study", image: multidisciplinaryImg, targetId: "multidisciplinary" },
   { id: 6, url: "/case-study", image: googleImg, targetId: "google" },
   { id: 7, url: "/case-study", image: aiImg, targetId: "artificial" },
   { id: 8, url: "/case-study", image: nikeImg, targetId: "nike" },
-  // { id: 9, url: "/case-study", image: raymondImg, targetId: "raymond" },
-  { id: 10, url: "/case-study", image: legalImg, targetId: "legal" }, 
+  { id: 9, url: "/case-study", image: raymondImg, targetId: "raymond" },
+  // { id: 10, url: "/case-study", image: legalImg, targetId: "legal" }, 
   { id: 11, url: "/case-study", image: displayImg, targetId: "display" },
   { id: 12, url: "/case-study", image: menImg, targetId: "men" },
   { id: 13, url: "/case-study", image: lorealImg, targetId: "loreal" },    
