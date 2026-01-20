@@ -28,7 +28,7 @@ import globalization from "../assets/projects/globalization.jpeg";
 import musicImg from "../assets/projects/music.jpeg";
 import havenHelmsImg from "../assets/projects/havenHelms.jpeg";
 import Hero from "../components/Hero";
-import projectVideo from '../assets/home_intro.mp4';
+import projectVideo from '../assets/projectVideo.mp4';
 // import vMImg from "../assets/projects/vM.jpeg";
 
 const images = [
