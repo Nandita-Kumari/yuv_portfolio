@@ -41,7 +41,7 @@ const images = [
   { img: paytmImg, title: "Paytm business Model", pdf: "paytmBM.pdf" },
   { img: img6, title: "Royal Enfield Phillips" },
   { img: yearsImg, title: "50 years of fashion transformation" }, 
-  { img: globalization, title: "Globalisation and corporate culture" },
+  { img: globalization, title: "Globalisation and corporate culture", pdf: "globalisation.pdf" },
   { img: barbieBratzImg, title: "Barbie vs Bratz", pdf: "barbieBratz.pdf" }, 
   { img: bvlGariImg, title: "BVLGARI" },
   { img: maxImg, title: "Max", pdf: "Max.pdf" },
