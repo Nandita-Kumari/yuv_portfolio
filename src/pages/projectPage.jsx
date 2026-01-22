@@ -29,6 +29,7 @@ import musicImg from "../assets/projects/music.jpeg";
 import havenHelmsImg from "../assets/projects/havenHelms.jpeg";
 import Hero from "../components/Hero";
 import projectVideo from '../assets/projectVideo.mp4';
+import royalPhilips from "../assets/projects/royalPhilips.png";
 // import vMImg from "../assets/projects/vM.jpeg";
 
 const images = [
@@ -39,7 +40,7 @@ const images = [
   // { img: vMImg, title: "Visual Merchandizing", pdf: "visualMerchandizing.pdf" },
   { img: havenHelmsImg, title: "Haven And Helms", pdf: "havenHelm.pdf" },   
   { img: paytmImg, title: "Paytm business Model", pdf: "paytmBM.pdf" },
-  { img: img6, title: "Royal Enfield Phillips" },
+  { img: royalPhilips, title: "Royal Enfield Phillips" },
   { img: yearsImg, title: "50 years of fashion transformation" }, 
   { img: globalization, title: "Globalisation and corporate culture", pdf: "globalisation.pdf" },
   { img: barbieBratzImg, title: "Barbie vs Bratz", pdf: "barbieBratz.pdf" }, 
