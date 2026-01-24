@@ -211,7 +211,11 @@ const handleExit = () => {
           <Box
             sx={{
               display: { xs: "none", sm: "flex" },
-              gap: 2,
+              gap: {
+                xs: 0,
+                sm: 0,
+                md: 2
+              },
               flexGrow: 1,
               justifyContent: "center",
             }}
@@ -224,7 +228,11 @@ const handleExit = () => {
                 end={item.path === "/home"}
                 sx={{
                   color: "#fff",
-                  fontSize: "0.7rem",
+                  fontSize: {
+  xs: "0.3rem", // mobile (hidden anyway)
+  sm: "0.5rem",  // 📱 tablets
+  md: "0.7rem",  // 💻 desktop
+},
                   "&.active": {
                     color: "#db0000",
                     borderBottom: "2px solid #db0000",
@@ -238,13 +246,18 @@ const handleExit = () => {
           </Box>
 
           {/* RIGHT : SMALL LOGO */}
-          <Box>
-            <img
-              src= {logo}              
-              alt="logo"
-              style={{ height: 40 }}
-            />
-          </Box>
+          <Box
+  sx={{
+    ml: { xs: "auto", sm: 0 }, // 👈 push right on small screens
+  }}
+>
+  <img
+    src={logo}
+    alt="logo"
+    style={{ height: 40 }}
+  />
+</Box>
+
         </Toolbar>
 
         {/* AVATAR DROPDOWN */}

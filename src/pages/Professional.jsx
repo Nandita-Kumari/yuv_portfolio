@@ -1,12 +1,14 @@
 import React from "react";
 import Navbar from "../components/Navbar";
 import roadmapImg from "../assets/roadmap2.png";
-import { Box, Typography, Grid, Toolbar } from "@mui/material";
+import { Typography, Toolbar } from "@mui/material";
 import upwork from "../assets/upwork_icon.png";
 import zara from "../assets/ZARA.jpg";
 import paypilot from "../assets/paypilot-icon.png"
 import allInOneHospitality from "../assets/logos/allInOneHospitality.jpg"
 import instawings from "../assets/instawings-icon.png"
+import Box from '@mui/system/Box';
+import Grid from '@mui/system/Grid';
 
 export default function Professional() {
   const experienceSections = [
@@ -202,14 +204,17 @@ export default function Professional() {
       style={{ display: "flex", alignItems: "center", gap: "8px", textDecoration: "none", color: "inherit" }}
     >
       <Typography
-        variant="h5"
-        sx={{
-          fontWeight: 700,
-          letterSpacing: "3px",
-        }}
-      >
-        {section.company}
-      </Typography>
+  variant="h5"
+  sx={{
+    fontWeight: 700,
+    letterSpacing: "3px",
+    fontSize: { xs: "1rem", sm: "1.25rem", md: "1.5rem", lg: "1.75rem" }, // responsive sizes
+    textAlign: { xs: "center", md: "left" }, // optional: align center on small screens
+  }}
+>
+  {section.company}
+</Typography>
+
 
       {section.logo && (
         <img
@@ -225,97 +230,88 @@ export default function Professional() {
 
 
             {/* Cards */}
-            <Grid
-              container
-              spacing={4}
-              justifyContent={{ xs: "center", md: "flex-start" }}
+           <Grid container spacing={{ xs: 3, md: 4 }} justifyContent="center">
+  {section.cards.map((card, index) => (
+    <Grid item size={{xs:12, sm:8, md:4}} key={index}>
+      <Box
+        sx={{
+          width: "100%",
+          perspective: "1000px",
+          overflow: "visible", // Prevent flip from spilling
+        }}
+      >
+        <Box
+          sx={{
+            width: "100%",
+            height: { xs: 220, sm: 240, md: 260 },
+            position: "relative",
+            transformStyle: "preserve-3d",
+            transition: "transform 0.8s",
+            "&:hover": {
+              transform: "rotateY(180deg)",
+            },
+          }}
+        >
+          {/* Front */}
+          <Box
+            sx={{
+              position: "absolute",
+              width: "100%",
+              height: "100%",
+              backfaceVisibility: "hidden",
+              borderRadius: 3,
+              backgroundColor: "#111",
+              border: "1px solid #222",
+              display: "flex",
+              flexDirection: "column",
+              justifyContent: "center",
+              alignItems: "center",
+              boxShadow: "0 4px 20px rgba(228,25,25,0.45)",
+              px: 2,
+            }}
+          >
+            <Typography
+              sx={{ fontWeight: 600, mb: 1, textAlign: "center" }}
             >
-              {section.cards.map((card, index) => (
-                <Grid
-                  item
-                  key={index}
-                  xs={12}
-                  sm={8}
-                  md={4}
-                  sx={{ display: "flex", justifyContent: "center" }}
-                >
-                  {/* Flip Card */}
-                  <Box sx={{ perspective: "1000px" }}>
-                    <Box
-                      sx={{
-                        width: { xs: "100%", sm: "320px" },
-                        maxWidth: "320px",
-                        height: "230px",
-                        position: "relative",
-                        transformStyle: "preserve-3d",
-                        transition: "transform 0.8s",
-                        "&:hover": {
-                          transform: "rotateY(180deg)",
-                          cursor: "pointer",
-                        },
-                      }}
-                    >
-                      {/* Front */}
-                      <Box
-                        sx={{
-                          position: "absolute",
-                          width: "100%",
-                          height: "100%",
-                          backfaceVisibility: "hidden",
-                          backgroundColor: "#111",
-                          borderRadius: 3,
-                          border: "1px solid #222",
-                          display: "flex",
-                          flexDirection: "column",
-                          justifyContent: "center",
-                          alignItems: "center",
-                          boxShadow:
-                            "0 4px 20px rgba(228, 25, 25, 0.45)",
-                        }}
-                      >
-                        <Typography
-                          variant="h6"
-                          sx={{ fontWeight: 600, mb: 1 }}
-                        >
-                          {card.title}
-                        </Typography>
-                        <Typography variant="body1" sx={{textAlign: 'center', opacity: 0.9, fontSize: "15px" }}>
-                          {card.front}
-                        </Typography>
-                      </Box>
+              {card.title}
+            </Typography>
+            <Typography
+              sx={{ textAlign: "center", fontSize: { xs: "0.8rem", sm: "0.9rem", md: "1rem" } }}
+            >
+              {card.front}
+            </Typography>
+          </Box>
 
-                      {/* Back */}
-                      <Box
-                        sx={{
-                          position: "absolute",
-                          width: "100%",
-                          height: "100%",
-                          backfaceVisibility: "hidden",
-                          transform: "rotateY(180deg)",
-                          backgroundColor: "#0b0b0b",
-                          borderRadius: 3,
-                          border: "1px solid #db0000b8",
-                          display: "flex",
-                          justifyContent: "center",
-                          alignItems: "center",
-                          padding: 3,
-                         
-                          boxShadow:
-                            "0 6px 25px rgba(247, 33, 33, 0.85)",
-                        }}
-                      >
-                        <Typography
-                          variant="body2"
-                          sx={{ textAlign: "center", opacity: 0.9, fontSize:  '12px' }}
-                        >
-                          {card.back}
-                        </Typography>
-                      </Box>
-                    </Box>
-                  </Box>
-                </Grid>
-              ))}
-            </Grid>
+          {/* Back */}
+          <Box
+            sx={{
+              position: "absolute",
+              width: "100%",
+              height: "100%",
+              backfaceVisibility: "hidden",
+              transform: "rotateY(180deg)",
+              borderRadius: 3,
+              backgroundColor: "#0b0b0b",
+              border: "1px solid #db0000b8",
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+              px: 2,
+              boxShadow: "0 6px 25px rgba(247,33,33,0.85)",
+            }}
+          >
+            <Typography
+              sx={{ fontSize: { xs: "0.7rem", sm: "0.8rem", md: "0.9rem" }, textAlign: "center" }}
+            >
+              {card.back}
+            </Typography>
+          </Box>
+        </Box>
+      </Box>
+    </Grid>
+  ))}
+</Grid>
+
           </Box>
         ))}
       </Box>

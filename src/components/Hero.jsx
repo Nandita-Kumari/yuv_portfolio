@@ -1,78 +1,103 @@
-import * as React from 'react';
-import Box from '@mui/material/Box';
-import Typography from '@mui/material/Typography';
-import Button from '@mui/material/Button';
-import PlayArrowIcon from '@mui/icons-material/PlayArrow';
-import ErrorOutlineIcon from '@mui/icons-material/ErrorOutline';
-
+import * as React from "react";
+import Box from "@mui/material/Box";
+import Typography from "@mui/material/Typography";
+import Button from "@mui/material/Button";
+import PlayArrowIcon from "@mui/icons-material/PlayArrow";
+import ErrorOutlineIcon from "@mui/icons-material/ErrorOutline";
 
 export default function Hero({ videoSrc }) {
   return (
     <Box
       sx={{
         width: "100%",
-        height: { xs: "75vh", sm: "75vh", md: "95vh" },
+        height: {
+          xs: "70dvh",
+          sm: "75vh",
+          md: "95vh",
+        },
         position: "relative",
         overflow: "hidden",
       }}
     >
-      {/* Video */}
-      <video
-        src={videoSrc}
-        autoPlay
-        muted
-        loop
-        style={{
-          width: "100%",
-          height: "100%",
-          objectFit: "cover",
-        }}
-      />
+      {/* 🎥 Responsive Video */}
+      <Box
+  component="video"
+  src={videoSrc}
+  autoPlay
+  muted
+  loop
+  playsInline
+  sx={{
+    width: "100%",
+    height: "100%",
+    objectFit: {
+      xs: "contain",
+      sm: "cover",
+    },
+    objectPosition: {
+      xs: "top center", // 👈 shift video upward on mobile
+      sm: "center",
+    },
+    backgroundColor: "#000",
+  }}
+/>
 
-      {/* Content Over Video */}
+
+
+      {/* 🌑 Overlay (optional but improves readability) */}
       <Box
         sx={{
           position: "absolute",
-          bottom: { xs: 20, sm: 30, md: 40 },
-          left: { xs: 15, sm: 30, md: 50 },
+          inset: 0,
+          background:
+            "linear-gradient(to top, rgba(0,0,0,0.6), rgba(0,0,0,0.1))",
+        }}
+      />
+
+      {/* 📝 Content */}
+      <Box
+        sx={{
+          position: "absolute",
+          bottom: { xs: 16, sm: 30, md: 50 },
+          left: { xs: 16, sm: 30, md: 60 },
           color: "#fff",
           display: "flex",
           flexDirection: "column",
-          gap: { xs: 1, sm: 2 },
-          maxWidth: { xs: "90%", sm: "90%", md: "95%" },
+          gap: { xs: 1.2, sm: 2 },
+          maxWidth: {
+            xs: "92%",
+            sm: "85%",
+            md: "70%",
+          },
         }}
       >
-        {/* Name */}
-        {/* <Typography
-          sx={{
-            fontWeight: 700,
-            fontSize: { xs: "1.4rem", sm: "2rem", md: "2.3rem" },
-            lineHeight: 1.2,
-          }}
-        >
-          YOUVAKSHI THAKUR
-        </Typography> */}
-
         {/* Description */}
         <Typography
           sx={{
-            fontSize: { xs: "0.4rem", sm: "0.6rem", md: "0.8rem" },
-            lineHeight: { xs: 1.3, sm: 1.5 },
-            maxHeight: { xs: "6.2rem", sm: "none" },
-            overflow: "hidden",
-            textOverflow: "ellipsis",
-            display: "-webkit-box",
-            WebkitLineClamp: { xs: 4, sm: "unset" },
-            WebkitBoxOrient: "vertical",
+            fontSize: {
+              xs: "0.75rem",
+              sm: "0.9rem",
+              md: "1rem",
+            },
+            lineHeight: 1.6,
             opacity: 0.9,
+            display: "-webkit-box",
+            WebkitLineClamp: { xs: 5, sm: "unset" },
+            WebkitBoxOrient: "vertical",
+            overflow: "hidden",
           }}
         >
-         I'm Youvakshi Thakur, a dynamic marketing leader with a unique blend of creativity, strategy, and leadership. Originally from the scenic hills of Shimla and currently thriving in the vibrant landscape of Bangalore, I've spent the last four years shaping impactful brand narratives in both cities.
-As a Marketing Manager, I specialize in social media strategy and brand architecture, driving meaningful engagement and elevating brand presence in a fast paced digital world. My journey has been one of transformation successfully designing and executing comprehensive brand ecosystems from the ground up. A key highlight: I led the creation of a complete brand identity for a growing IT fintech company, turning abstract ideas into a polished and powerful digital presence.
-With expertise spanning product lifecycle management, enterprise level data governance, and Agile methodologies, I have a proven track record in delivering results. I excel in cross functional leadership, collaborating with diverse teams to bring visions to life and ensure seamless execution.
+          I'm Youvakshi Thakur, a dynamic marketing leader with a unique blend of
+          creativity, strategy, and leadership. Originally from the scenic hills
+          of Shimla and currently thriving in Bangalore, I've spent the last four
+          years shaping impactful brand narratives.
+
+          As a Marketing Manager, I specialize in social media strategy and brand
+          architecture, building strong digital ecosystems and leading cross
+          functional teams to deliver meaningful results.
         </Typography>
 
-        {/* Buttons */}
+        {/* 🔘 Buttons */}
         <Box
           sx={{
             display: "flex",
@@ -81,62 +106,82 @@ With expertise spanning product lifecycle management, enterprise level data gove
             mt: { xs: 1, sm: 2 },
           }}
         >
-          {/* Resume Button */}
+          {/* Resume */}
           <Button
-  variant="contained"
-  component="a"
-  href="/pdfs/resume.pdf"
-  target="_blank"
-  rel="noopener noreferrer"
-  sx={{
-    fontSize: { xs: "0.65rem", sm: "0.8rem", md: "1rem" },
-    backgroundColor: "#fff",
-    color: "#000",
-    fontWeight: "bold",
-    padding: { xs: "6px 10px", sm: "8px 18px" },
-    display: "flex",
-    alignItems: "center",
-    gap: 1,
-    "&:hover": {
-      backgroundColor: "#f2f2f2",
-      color: "#000"
-    },
-  }}
->
-  <PlayArrowIcon sx={{ fontSize: { xs: "0.9rem", sm: "1.1rem", md: "1.3rem" } }} />
-  Resume
-</Button>
+            variant="contained"
+            component="a"
+            href="/pdfs/resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            sx={{
+              fontSize: {
+                xs: "0.7rem",
+                sm: "0.85rem",
+                md: "1rem",
+              },
+              backgroundColor: "#fff",
+              color: "#000",
+              fontWeight: 600,
+              px: { xs: 1.5, sm: 2.5 },
+              py: { xs: 0.7, sm: 1 },
+              display: "flex",
+              alignItems: "center",
+              gap: 1,
+              "&:hover": {
+                backgroundColor: "#f2f2f2",
+              },
+            }}
+          >
+            <PlayArrowIcon
+              sx={{
+                fontSize: {
+                  xs: "1rem",
+                  sm: "1.2rem",
+                  md: "1.4rem",
+                },
+              }}
+            />
+            Resume
+          </Button>
 
-         <Button
-  component="a"
-  href="https://www.linkedin.com/in/youvakshi-thakur-1a9585166?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
-  target="_blank"
-  rel="noopener noreferrer"
-  variant="outlined"
-  sx={{
-    fontSize: { xs: "0.65rem", sm: "0.8rem", md: "1rem" },
-    padding: { xs: "6px 10px", sm: "8px 18px" },
-    backgroundColor: "rgba(0, 0, 0, 0.3)",
-    color: "#fff",
-    borderColor: "rgba(255,255,255,0.7)",
-    display: "flex",
-    alignItems: "center",
-    gap: 1,
-    textDecoration: "none",
-    "&:hover": {
-      backgroundColor: "rgba(0,0,0,0.5)",
-      borderColor: "#fff",
-      textDecoration: "none",
-      color: "#fff"
-    },
-  }}
->
-  <ErrorOutlineIcon
-    sx={{ fontSize: { xs: "0.9rem", sm: "1.1rem", md: "1.3rem" } }}
-  />
-  LinkedIn
-</Button>
-
+          {/* LinkedIn */}
+          <Button
+            component="a"
+            href="https://www.linkedin.com/in/youvakshi-thakur-1a9585166"
+            target="_blank"
+            rel="noopener noreferrer"
+            variant="outlined"
+            sx={{
+              fontSize: {
+                xs: "0.7rem",
+                sm: "0.85rem",
+                md: "1rem",
+              },
+              px: { xs: 1.5, sm: 2.5 },
+              py: { xs: 0.7, sm: 1 },
+              backgroundColor: "rgba(0,0,0,0.3)",
+              color: "#fff",
+              borderColor: "rgba(255,255,255,0.7)",
+              display: "flex",
+              alignItems: "center",
+              gap: 1,
+              "&:hover": {
+                backgroundColor: "rgba(0,0,0,0.5)",
+                borderColor: "#fff",
+              },
+            }}
+          >
+            <ErrorOutlineIcon
+              sx={{
+                fontSize: {
+                  xs: "1rem",
+                  sm: "1.2rem",
+                  md: "1.4rem",
+                },
+              }}
+            />
+            LinkedIn
+          </Button>
         </Box>
       </Box>
     </Box>
