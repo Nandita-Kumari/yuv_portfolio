@@ -392,14 +392,14 @@ export default function Skills() {
         backgroundColor: "#000",
         minHeight: "100vh",
         color: "#fff",
-        paddingBottom: "60px"
+        paddingBottom: "60px",
       }}
     >
       <Navbar />
 
-      <Box sx={{ pt: 12, px: 2, textAlign: "center" }}>
+      <Box sx={{ pt: { xs: 10, sm: 12 }, px: { xs: 2, sm: 4, md: 6 }, textAlign: "center" }}>
         {sections.map((section, index) => (
-          <Box key={index} sx={{ mb: 10 }}>
+          <Box key={index} sx={{ mb: { xs: 8, sm: 10, md: 12 } }}>
             
             {/* Section Heading Animation */}
             <motion.div
@@ -413,8 +413,9 @@ export default function Skills() {
                 variant="h6"
                 sx={{
                   fontWeight: 600,
-                  mb: 5,
+                  mb: { xs: 3, sm: 5 },
                   letterSpacing: "2px",
+                  fontSize: { xs: "1.1rem", sm: "1.3rem", md: "1.5rem", lg: "1.8rem" },
                   display: "inline-block",
                   paddingBottom: "5px",
                   position: "relative",
@@ -444,43 +445,57 @@ export default function Skills() {
             >
               <Grid
                 container
-                spacing={4}
+                spacing={{ xs: 2, sm: 3, md: 4 }}
                 justifyContent="center"
-                sx={{ px: { xs: 2, sm: 4 } }}
+                sx={{ px: { xs: 1, sm: 2, md: 3 } }}
               >
                 {section.items.map((item, idx) => (
                   <Grid
                     item
                     key={idx}
-                    xs={12}
-                    sm={6}
-                    md={3}
+                    size={{xs: 12, sm: 6, md: 4, lg: 3}}
                     sx={{ display: "flex", justifyContent: "center" }}
                   >
                     <motion.div variants={cardAnim} transition={{ duration: 0.5 }}>
                       <Card
                         sx={{
-                          width: 260,
+                          width: { xs: "100%", sm: 250, md: 260 },
                           backgroundColor: "#111",
                           color: "#fff",
                           textAlign: "center",
                           borderRadius: 3,
-                          paddingY: 3,
+                          py: { xs: 2, sm: 3 },
                           transition: "0.3s",
                           border: "1px solid #222",
+                          boxShadow: "0 4px 20px rgba(228, 25, 25, 0.32)", // always visible
                           "&:hover": {
                             transform: "translateY(-10px)",
-                            boxShadow: "0 4px 20px rgba(200, 19, 19, 0.8)",
+                            boxShadow: "0 6px 22px rgba(200, 19, 19, 0.8)",
                             cursor: "pointer",
                           },
                         }}
                       >
                         <CardContent>
                           {item.icon}
-                          <Typography variant="h6" sx={{ mt: 2, fontWeight: 600 }}>
+                          <Typography
+                            variant="h6"
+                            sx={{
+                              mt: 2,
+                              fontWeight: 600,
+                              fontSize: { xs: "0.9rem", sm: "1rem", md: "1.1rem" },
+                            }}
+                          >
                             {item.title}
                           </Typography>
-                          <Typography variant="body2" sx={{ mt: 1, opacity: 0.8, px: 1 }}>
+                          <Typography
+                            variant="body2"
+                            sx={{
+                              mt: 1,
+                              opacity: 0.8,
+                              px: { xs: 1, sm: 2 },
+                              fontSize: { xs: "0.75rem", sm: "0.85rem", md: "0.9rem" },
+                            }}
+                          >
                             {item.desc}
                           </Typography>
                         </CardContent>
